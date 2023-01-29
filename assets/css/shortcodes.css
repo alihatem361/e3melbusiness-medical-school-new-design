@@ -2929,3 +2929,7 @@ li.w-right {
 .p-20 {
   padding: 20px !important;
 }
+
+.text-main {
+  color: var(--primary-color);
+}
