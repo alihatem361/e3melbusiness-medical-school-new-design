@@ -662,6 +662,27 @@
     });
   };
 
+  $(".show-pass-btn").on("click", function (e) {
+    e.preventDefault();
+    const currentButtonIcon = $(this).find(".eye-icon").first();
+    const targetForm = $($(this).attr("data-parent"));
+    if (targetForm) {
+      targetForm
+        .find('input[data-type="password"]')
+        .each(function (index, element) {
+          const input = $(element);
+          if (input.attr("type") === "password") {
+            input.attr("type", "text");
+          } else {
+            input.attr("type", "password");
+          }
+          if (currentButtonIcon) {
+            currentButtonIcon.toggleClass("fa-eye fa-eye-slash");
+          }
+        });
+    }
+  });
+
   var removePreloader = function () {
     $(window).on("load", function () {
       $(".loader").fadeOut();

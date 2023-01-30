@@ -1164,6 +1164,7 @@ a:active {
 .header.downscrolled {
   box-shadow: 0 12px 6px rgb(0 0 0 / 6%);
   position: fixed;
+  top: 0 !important;
   margin: 0 auto;
   width: 100%;
   z-index: 999;
@@ -5187,4 +5188,30 @@ ul.list-footer li a {
   height: 35px;
   overflow: hidden;
   line-height: 35px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input {
+  padding-right: 70px;
+}
+
+.input-wrapper .show-pass-btn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: #000000;
+  z-index: 10;
+  border: none;
+  padding: 0;
+  transition: all 0.4s;
+}
+
+.input-wrapper .show-pass-btn:hover {
+  color: var(--primary-color);
 }

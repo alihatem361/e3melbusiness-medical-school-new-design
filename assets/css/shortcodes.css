@@ -2929,6 +2929,10 @@ li.w-right {
   margin-top: 100px;
 }
 
+.mb-150 {
+  margin-bottom: 150px;
+}
+
 .bg-light {
   background-color: #f7f7f7;
 }
@@ -2953,4 +2957,8 @@ li.w-right {
 
 .fs-sm {
   font-size: 14px;
+}
+
+.normal-h1 {
+  font-size: 28px;
 }
