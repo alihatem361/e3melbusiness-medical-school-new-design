@@ -4415,7 +4415,7 @@ ul.list-hours li .opening-hours {
 }
 
 .social-doctor {
-  margin: 14px 92px 0px 92px;
+  margin: 14px 20px 0px 20px;
   padding: 7px 0px 5px 0px;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
@@ -5166,4 +5166,25 @@ ul.list-footer li a {
 .bottom ul.fl-right li:last-child a {
   border-right: none;
   padding-right: 0px;
+}
+
+.team-item img {
+  width: 100%;
+  height: 260px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.team-item .info {
+  padding: 1rem;
+}
+
+.team-item .info .name {
+  font-size: 16px;
+}
+
+.team-item .info .title {
+  height: 35px;
+  overflow: hidden;
+  line-height: 35px;
 }

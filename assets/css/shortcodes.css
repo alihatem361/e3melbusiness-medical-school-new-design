@@ -2900,6 +2900,10 @@ li.w-right {
   border-radius: 50px;
 }
 
+.pt-100 {
+  padding-top: 100px;
+}
+
 .pb-100 {
   padding-bottom: 100px;
 }
@@ -2914,6 +2918,19 @@ li.w-right {
 
 .mb-50 {
   margin-bottom: 50px;
+}
+
+.my-100 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.bg-light {
+  background-color: #f7f7f7;
 }
 
 .fit-cover {
@@ -2932,4 +2949,8 @@ li.w-right {
 
 .text-main {
   color: var(--primary-color);
+}
+
+.fs-sm {
+  font-size: 14px;
 }
