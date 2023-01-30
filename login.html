@@ -123,7 +123,7 @@
                                   id="email"
                                   name="email"
                                   value=""
-                                  class="input-contact"
+                                  class="input-contact mb-2"
                                   type="text"
                                   placeholder="Email Address"
                                   required
@@ -142,7 +142,7 @@
                                     id="password"
                                     name="password"
                                     value=""
-                                    class="input-contact"
+                                    class="input-contact mb-2"
                                     type="password"
                                     placeholder="Your Password"
                                     data-type="password"
@@ -162,12 +162,23 @@
                                     class="themesflat-button bg-accent btn-submit w-100"
                                     role="button"
                                   >
-                                    <span>Send</span>
+                                    <span>Login</span>
                                   </button>
                                 </div>
                               </div>
                             </div>
                           </form>
+                          <div
+                            class="wrap d-flex justify-content-between flex-wrap mt-3"
+                          >
+                            <a href="#" class="text-main">
+                              Forget Password ?
+                            </a>
+                            <span href="#">
+                              Don't have account yet ?
+                              <a class="text-main" href="#">Sign Up</a>
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -373,12 +384,35 @@
     <!--#wrapper-->
     <!-- Javascript -->
     <script type="text/javascript" src="javascript/jquery.min.js"></script>
-    <script type="text/javascript" src="javascript/jquery-validate.js"></script>
+    <script
+      type="text/javascript"
+      src="javascript/jquery.validate.min.js"
+    ></script>
     <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
     <script type="text/javascript" src="javascript/jquery.easing.js"></script>
     <!--animation-->
     <script src="assets/animation/wow.min.js"></script>
     <script src="javascript/animation.js"></script>
     <script type="text/javascript" src="javascript/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#loginForm").validate({
+          rules: {
+            email: {
+              required: true,
+              email: true,
+            },
+            password: "required",
+          },
+          messages: {
+            password: "Please Enter your password",
+            email: {
+              required: "Email address is required",
+              email: "Enter a valid Email Address",
+            },
+          },
+        });
+      });
+    </script>
   </body>
 </html>
