@@ -2962,3 +2962,36 @@ li.w-right {
 .normal-h1 {
   font-size: 28px;
 }
+
+.theme-alert {
+  display: flex;
+  padding: 1rem 1.25rem;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.theme-alert i {
+  margin-right: 10px;
+}
+
+.theme-alert i:lang(ar) {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.theme-alert i,
+.theme-alert span {
+  line-height: 20px;
+}
+
+.theme-alert-success {
+  border: 1px solid #15da03;
+  background-color: #d4ffd0;
+  color: #0d9b00;
+}
+
+.theme-alert-danger {
+  border: 1px solid #ff4646;
+  background-color: #ffdede;
+  color: #e42424;
+}
