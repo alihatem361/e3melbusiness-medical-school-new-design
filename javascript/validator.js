@@ -38,4 +38,69 @@ $(document).ready(function () {
     },
     onsubmit: () => {},
   });
+  $("#registerForm").validate({
+    rules: {
+      name: {
+        required: true,
+      },
+      email: {
+        required: true,
+        email: true,
+      },
+      password: {
+        minlength: 5,
+      },
+      confirmPassword: {
+        minlength: 5,
+        equalTo: "#password",
+      },
+      country: {
+        required: true,
+      },
+      phone: {
+        required: true,
+        minlength: 6,
+      },
+      type: {
+        required: true,
+      },
+      profile: {
+        required: true,
+      },
+      agreement: {
+        required: true,
+      },
+    },
+    messages: {
+      name: "Your Name is Required.",
+      password: {
+        required: "Password is Required",
+        minlength: "Password must contain at least 5 characters.",
+      },
+      confirmPassword: {
+        equalTo: "Both Passwords must match.",
+      },
+      email: {
+        required: "Email address is required",
+        email: "Enter a valid Email Address",
+      },
+      country: "Your Country is Required.",
+      phone: {
+        required: "Phone Number is Required",
+        minlength: "Phone must contain at least 6 digits.",
+      },
+      type: "Registration Type is Required.",
+      profile: "Your Profile is Required.",
+      agreement: "You must agree to our terms first.",
+    },
+    errorPlacement: (error, element) => {
+      element.parent().after(error);
+      element.parent().addClass("has-error");
+    },
+    success: (error, element) => {
+      $(element).parent().removeClass("has-error");
+      error.remove();
+    },
+    onsubmit: () => {},
+  });
 });

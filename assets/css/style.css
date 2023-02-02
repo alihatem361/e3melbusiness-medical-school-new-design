@@ -4704,20 +4704,6 @@ ul.list-hours li .opening-hours {
   color: #bdc2cb;
 }
 
-.form-check {
-  top: 17px;
-  left: -10px;
-}
-
-.form-check input {
-  position: absolute;
-  cursor: pointer;
-  opacity: 0;
-  height: 20px;
-  width: 200px;
-  z-index: 999;
-}
-
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
