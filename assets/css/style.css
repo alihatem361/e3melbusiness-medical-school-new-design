@@ -1143,6 +1143,11 @@ a:active {
   padding-left: 8.6%;
 }
 
+#header,
+.header {
+  z-index: 1000 !important;
+}
+
 /* header-banner */
 #header-banner {
   height: 320px;

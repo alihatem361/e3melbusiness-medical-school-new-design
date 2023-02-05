@@ -2965,6 +2965,10 @@ li.w-right {
   margin-top: 100px;
 }
 
+.mx-w-250{
+  max-width: 250px;
+}
+
 .mb-150 {
   margin-bottom: 150px;
 }
@@ -3034,6 +3038,10 @@ li.w-right {
 
 .fs-14 {
   font-size: 14px;
+}
+
+.fs-28 {
+  font-size: 28px;
 }
 
 .dropdown.open .dropdown-menu {
