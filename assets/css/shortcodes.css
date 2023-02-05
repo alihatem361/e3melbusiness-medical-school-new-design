@@ -1470,6 +1470,12 @@ ul.list-check-sd li.check-sd-right::before {
   font-family: "FontAwesome";
 }
 
+.category-faq ul li .block-inside:lang(ar) a:after {
+  content: "\f0d9";
+  left: 0;
+  right: auto;
+}
+
 .box-faq {
   border-radius: 5px;
   border: 2px solid #e8e8e8;
@@ -1482,8 +1488,8 @@ ul.list-check-sd li.check-sd-right::before {
 
 .item-faq p:lang(ar) {
   color: var(--primary-color2) !important;
-  padding-right: 21px;
-  padding-left: 8px;
+  padding-left: 50px;
+  padding-right: 12px;
 }
 
 .box-faq .item-faq.active:last-child .content-item-faq,
@@ -1508,7 +1514,7 @@ ul.list-check-sd li.check-sd-right::before {
   font-family: "FontAwesome";
   color: var(--primary-color);
   position: absolute;
-  top: 15px;
+  top: 10px;
   right: 15px;
   width: 37px;
   height: 37px;
@@ -1519,23 +1525,9 @@ ul.list-check-sd li.check-sd-right::before {
   z-index: 999;
 }
 
-.item-faq .title-heading-faq::after {
-  content: "\f068";
-  font-family: "FontAwesome";
-  color: var(--primary-color);
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  width: 37px;
-  height: 37px;
-  background: #ebf2f3;
-  border-radius: 5px;
-  line-height: 37px;
-  text-align: center;
-}
-
-.item-faq.active .title-heading-faq::before {
-  display: none;
+.item-faq:lang(ar) .title-heading-faq::before {
+  left: 15px;
+  right: auto;
 }
 
 .item-faq .content-item-faq {
