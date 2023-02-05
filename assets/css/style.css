@@ -4941,6 +4941,11 @@ ul.list-hours li .opening-hours {
   padding-right: 24px;
 }
 
+.content-post ul.meta li:lang(ar) {
+  padding-left: 24px;
+  padding-right: 0;
+}
+
 .content-post .author,
 .content-post .day-post {
   font-family: var(--rubik-font), sans-serif;
@@ -4963,6 +4968,11 @@ ul.list-hours li .opening-hours {
   top: 50%;
   margin-top: -8px;
   left: -12px;
+}
+
+.content-post:lang(ar) .day-post::before {
+  right: -12px;
+  left: auto;
 }
 
 .content-post .title {
