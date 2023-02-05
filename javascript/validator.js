@@ -38,6 +38,29 @@ $(document).ready(function () {
     },
     onsubmit: () => {},
   });
+  $("#forgetPassForm").validate({
+    rules: {
+      email: {
+        required: true,
+        email: true,
+      },
+    },
+    messages: {
+      email: {
+        required: "Email address is required",
+        email: "Enter a valid Email Address",
+      },
+    },
+    errorPlacement: (error, element) => {
+      element.parent().after(error);
+      element.parent().addClass("has-error");
+    },
+    success: (error, element) => {
+      $(element).parent().removeClass("has-error");
+      error.remove();
+    },
+    onsubmit: () => {},
+  });
   $("#registerForm").validate({
     rules: {
       name: {
@@ -92,6 +115,35 @@ $(document).ready(function () {
       type: "Registration Type is Required.",
       profile: "Your Profile is Required.",
       agreement: "You must agree to our terms first.",
+    },
+    errorPlacement: (error, element) => {
+      element.parent().after(error);
+      element.parent().addClass("has-error");
+    },
+    success: (error, element) => {
+      $(element).parent().removeClass("has-error");
+      error.remove();
+    },
+    onsubmit: () => {},
+  });
+  $("#resetPassForm").validate({
+    rules: {
+      password: {
+        minlength: 5,
+      },
+      confirmPassword: {
+        minlength: 5,
+        equalTo: "#password",
+      },
+    },
+    messages: {
+      password: {
+        required: "كلمة السر مطلوبة",
+        minlength: "كلمة السر لا تقل عن 4 أحرف",
+      },
+      confirmPassword: {
+        equalTo: "يجب تطابق كلمة السر وتأكيد كلمة السر",
+      },
     },
     errorPlacement: (error, element) => {
       element.parent().after(error);

@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i | Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i | Hind:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap");
 @import "bootstrap.css";
 @import "icomoon.css";
 @import "owl.carousel.css";
@@ -25,6 +24,18 @@ textarea {
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+*:lang(ar) {
+  direction: rtl;
+}
+
+body:lang(ar),
+button:lang(ar),
+input:lang(ar),
+select:lang(ar),
+textarea:lang(ar) {
+  font-family: "Cairo", sans-serif;
 }
 
 img {
@@ -265,6 +276,10 @@ h1 {
   font-weight: 500;
 }
 
+h1:lang(ar) {
+  font-family: "Cairo", sans-serif;
+}
+
 h2 {
   font-size: 24px;
   line-height: 35px;
@@ -280,11 +295,19 @@ h4 {
   font-weight: 700;
 }
 
+h4:lang(ar) {
+  font-family: "Cairo", sans-serif;
+}
+
 /* 20px */
 h5 {
   font-family: "Rubik", sans-serif;
   font-size: 15px;
   font-weight: 400;
+}
+
+h5:lang(ar) {
+  font-family: "Cairo", sans-serif;
 }
 
 h6 {
@@ -604,6 +627,11 @@ a:active {
   transform: translateY(-50%);
 }
 
+.flat-read-more a i:lang(ar) {
+  right: 113%;
+  left: auto;
+}
+
 .flat-read-more.fl-st-2 a i {
   color: var(--primary-color);
 }
@@ -818,6 +846,10 @@ a:active {
 
 .pdbt-70 {
   padding-bottom: 70px !important;
+}
+
+.pdr-12 {
+  padding-right: 12px !important;
 }
 
 .pdr-25 {
@@ -1041,6 +1073,11 @@ a:active {
 #site-header .logo {
   width: 19%;
   padding-left: 2.8%;
+}
+
+#site-header .logo:lang(ar) {
+  padding-right: 2.8%;
+  padding-left: 0;
 }
 
 .nav-wrap {
@@ -1962,6 +1999,11 @@ a.megamenu-box {
   transition: all 0.3s ease-in-out;
 }
 
+#mainnav .menu > li.menu-item-has-children:lang(ar) > a::after {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
 #mainnav .menu > li.active.menu-item-has-children > a::after,
 #mainnav .menu > li.menu-item-has-children > a:hover:after {
   color: var(--primary-color);
@@ -2054,6 +2096,10 @@ a.megamenu-box {
   color: var(--primary-color2);
   padding: 0px 0px 0px 15px;
   width: 250px;
+}
+
+#mainnav .menu > li > .sub-menu > li > a:lang(ar) {
+  padding: 0px 15px 0px 0;
 }
 
 #mainnav .menu > li > .sub-menu > li.active > a,
@@ -2164,6 +2210,15 @@ h2.title-ab {
   letter-spacing: -0.5px;
   line-height: 22px;
   font-size: 24px;
+}
+
+h2.title-ab:lang(ar) {
+  letter-spacing: 0;
+  text-align: right;
+}
+
+p:lang(ar) {
+  text-align: right;
 }
 
 h3.heading {
@@ -3387,6 +3442,10 @@ article.main-post .entry-content a.more-link:hover {
   cursor: pointer;
 }
 
+#mainnav-mobi ul li:lang(ar) {
+  text-align: right;
+}
+
 #mainnav-mobi ul > li > a {
   text-decoration: none;
   height: 50px;
@@ -3447,8 +3506,13 @@ article.main-post .entry-content a.more-link:hover {
   margin-top: -8px;
   right: 15px;
   -webkit-transition: all ease 0.238s;
-  -moz-transition: all ease 0.238s;
   transition: all ease 0.238s;
+}
+
+.btn-menu:lang(ar) {
+  float: left;
+  right: auto;
+  left: 15px;
 }
 
 .btn-menu:before,
@@ -3517,6 +3581,12 @@ article.main-post .entry-content a.more-link:hover {
   cursor: pointer;
   width: 70px;
   height: 44px;
+}
+
+.btn-submenu:lang(ar) {
+  left: 20px;
+  right: auto;
+  font: 20px/50px "FontAwesome" !important;
 }
 
 .btn-submenu:before {
@@ -4746,15 +4816,28 @@ ul.list-hours li .opening-hours {
   top: 50%;
   margin-top: -113px;
   z-index: 1;
+  width: 200px;
+  height: 200px;
+}
+
+.img-box-1:lang(ar) {
+  left: auto;
+  right: -110px;
 }
 
 .img-box-2 {
   position: absolute;
-  top: 50%;
+  top: 47.5% !important;
   left: -76px;
   top: 50%;
   margin-top: -58px;
   z-index: 2;
+  border-radius: 50%;
+}
+
+.img-box-2:lang(ar) {
+  left: auto;
+  right: -80px !important;
 }
 
 /* articles */
@@ -5204,6 +5287,11 @@ ul.list-footer li a {
   padding-right: 70px;
 }
 
+.input-wrapper input:lang(ar) {
+  padding-right: 15px;
+  padding-left: 70px;
+}
+
 .input-wrapper .show-pass-btn {
   position: absolute;
   right: 12px;
@@ -5218,6 +5306,64 @@ ul.list-footer li a {
   transition: all 0.4s;
 }
 
+.input-wrapper .show-pass-btn:lang(ar) {
+  right: auto;
+  left: 12px;
+}
+
 .input-wrapper .show-pass-btn:hover {
   color: var(--primary-color);
+}
+
+h1:lang(ar),
+h2:lang(ar),
+h3:lang(ar),
+h4:lang(ar),
+h5:lang(ar),
+h6:lang(ar),
+p:lang(ar),
+span:lang(ar),
+a:lang(ar),
+div:lang(ar),
+small:lang(ar) {
+  font-family: "Cairo", sans-serif !important;
+}
+
+.tp-parallax-wrap:lang(ar) {
+  right: 200px;
+}
+
+@media screen and (max-width: 991px) {
+  .tp-parallax-wrap:lang(ar) {
+    right: 20px;
+  }
+}
+
+.tp-caption:lang(ar) {
+  letter-spacing: 0 !important;
+  height: 80px !important;
+}
+
+.slider-btn {
+  margin-top: 30px !important;
+}
+
+@media screen and (min-width: 1199px) {
+  .slide-font-2 {
+    font-size: 50px !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .slide-font-2 {
+    font-size: 36px !important;
+  }
+}
+
+.tp-bullet {
+  background-color: #ffffff !important;
+}
+
+.tp-bullet.selected {
+  background-color: #c9e8ff !important;
 }

@@ -2759,6 +2759,11 @@ select.form-control-lg:not([size]):not([multiple]),
   cursor: pointer;
 }
 
+.form-check-label:lang(ar) {
+  padding-right: 1.25rem;
+  padding-left: 0;
+}
+
 .form-check-input {
   position: absolute;
   margin-top: 0.45rem;

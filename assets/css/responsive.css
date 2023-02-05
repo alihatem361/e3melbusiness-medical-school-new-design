@@ -30,15 +30,11 @@
   }
 
   #site-header .contact {
-    width: 20%;
+    width: 22%;
   }
 
   .nav-wrap {
     width: 60%;
-  }
-
-   {
-    width: 50% !important;
   }
 
   .nav-wrap.fl-st-2 {
@@ -80,6 +76,12 @@
 
   .box-wrap-os .row-os {
     padding-top: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #site-header .contact {
+    width: 25%;
   }
 }
 
@@ -1184,6 +1186,13 @@
   }
 }
 /**/
+
+@media screen and (max-width: 991px) {
+  .contact .button-header,
+  .contact-header .button-header {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 580px) {
   .box-list-footer .box-list,

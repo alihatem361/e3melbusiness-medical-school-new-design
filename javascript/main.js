@@ -243,7 +243,7 @@
     if ($(document.body).hasClass("counter-scroll")) {
       var a = 0;
       $(window).scroll(function () {
-        var oTop = $(".box").offset().top - window.innerHeight;
+        var oTop = $(".box").offset()?.top - window.innerHeight;
         if (a === 0 && $(window).scrollTop() > oTop) {
           if ($().countTo) {
             $(".box")

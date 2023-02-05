@@ -11,6 +11,7 @@ $(document).ready(function () {
         margin: margin,
         autoplay: false,
         autoplayTimeout: 2500,
+        rtl: true,
         autoplayHoverPause: true,
         responsive: {
           0: {
@@ -37,6 +38,7 @@ $(document).ready(function () {
     loop: true,
     margin: 20,
     autoplay: false,
+    rtl: true,
     autoplayTimeout: 2500,
     autoplayHoverPause: true,
     responsive: {

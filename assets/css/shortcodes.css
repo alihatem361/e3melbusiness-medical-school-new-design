@@ -601,6 +601,11 @@
   padding-top: 21%;
 }
 
+.owl-theme:lang(ar) .owl-nav [class*="owl-"]:after {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 .owl-theme.ptf .owl-nav [class*="owl-"]:after {
   font-size: 11px;
   line-height: 40px;
@@ -753,6 +758,11 @@
   z-index: 3;
 }
 
+.feature-medal .medal:lang(ar) {
+  right: 0;
+  left: auto;
+}
+
 .feature-medal .feature-medal-inner {
   position: absolute;
   right: -7px;
@@ -763,6 +773,10 @@
 .medal .box-icon {
   text-align: right;
   width: 20%;
+}
+
+.medal .box-icon:lang(ar) {
+  text-align: left;
 }
 
 .medal .box-icon i {
@@ -778,6 +792,11 @@
 
 .box-wrap-ab .title-heading {
   padding-right: 20%;
+}
+
+.box-wrap-ab .title-heading:lang(ar) {
+  padding-left: 20%;
+  padding-right: 0;
 }
 
 .box-wrap-ab ul {
@@ -1461,6 +1480,12 @@ ul.list-check-sd li.check-sd-right::before {
   padding-left: 21px;
 }
 
+.item-faq p:lang(ar) {
+  color: var(--primary-color2) !important;
+  padding-right: 21px;
+  padding-left: 8px;
+}
+
 .box-faq .item-faq.active:last-child .content-item-faq,
 .box-faq .item-faq:last-child .title-heading-faq {
   border-bottom: none;
@@ -1697,6 +1722,11 @@ ul.list-pricing li {
   padding-left: 36px;
 }
 
+.box-wrap-services-faq .content-services-faq:lang(ar) {
+  padding-right: 36px;
+  padding-left: 0;
+}
+
 .box-wrap-services-faq .content-services-faq::before {
   content: "";
   width: 69px;
@@ -1763,6 +1793,11 @@ ul.list-pricing li {
   transition: all 0.3s ease-in-out;
 }
 
+.box-services-faq .title-heading-faq:lang(ar) {
+  padding-right: 30px;
+  padding-left: 0;
+}
+
 .box-services-faq .item-faq .title-heading-faq::before {
   font-size: 20px;
   top: 20px;
@@ -1774,6 +1809,11 @@ ul.list-pricing li {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+.box-services-faq .item-faq:lang(ar) .title-heading-faq::before {
+  left: 20px;
+  right: auto;
 }
 
 .box-services-faq .item-faq:hover .title-heading-faq::before {
@@ -2998,4 +3038,26 @@ li.w-right {
   border: 1px solid #ff4646;
   background-color: #ffdede;
   color: #e42424;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+
+.dropdown.open .dropdown-menu:lang(ar) {
+  text-align: right;
+}
+
+.profile-dropdown .dropdown-toggle::after {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .profile-dropdown {
+    display: none;
+  }
 }
