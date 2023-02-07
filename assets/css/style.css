@@ -2659,6 +2659,10 @@ ul.icon-direction li {
   background-color: #142643;
 }
 
+.box-contact:lang(ar) {
+  padding: 62px 44px 44px 4px;
+}
+
 .box-contact ul.one-half.first {
   padding-top: 22px;
 }
@@ -2678,6 +2682,11 @@ ul.icon-direction li {
   width: 25%;
   padding: 62px 0px 52px 92px;
   background-color: #192a47;
+}
+
+.box-useful:lang(ar) {
+  float: right;
+  padding: 62px 92px 52px 4px;
 }
 
 .progress-animated {
@@ -2701,12 +2710,24 @@ ul.icon-direction li {
   left: -2px;
 }
 
+.box-useful ul.one-half.first li i.fa-square:lang(ar) {
+  position: relative;
+  top: -3px;
+  right: -6px;
+  left: auto;
+}
+
 /* box-recent */
 .box-recent {
   float: left;
   width: 25%;
   padding: 61px 0px 17px 58px;
   background-color: #142643;
+}
+
+.box-recent:lang(ar) {
+  float: right;
+  padding: 61px 58px 17px 4px;
 }
 
 .box-recent ul.one-half.first {
@@ -2721,6 +2742,13 @@ ul.icon-direction li {
   position: relative;
   top: 0px;
   left: -7px;
+}
+
+.box-recent ul.one-half.first li i.fa-square:lang(ar) {
+  position: relative;
+  top: 0px;
+  right: -7px;
+  left: auto;
 }
 
 .box-recent ul li.in a {
@@ -2757,6 +2785,11 @@ ul.icon-direction li {
   padding: 62px 0px 50px 65px;
 }
 
+.box-services:lang(ar) {
+  float: right;
+  padding: 62px 65px 50px 4px;
+}
+
 .box-services ul.one-half.first {
   padding-top: 30px;
   padding-left: 2px;
@@ -2770,6 +2803,13 @@ ul.icon-direction li {
   position: relative;
   top: -4px;
   left: -2px;
+}
+
+.box-services ul.one-half.first li i.fa-square:lang(ar) {
+  position: relative;
+  top: -4px;
+  right: -6px;
+  left: auto;
 }
 
 /* Footer Bottom */
