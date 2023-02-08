@@ -2269,6 +2269,11 @@ li.w-right {
   margin-bottom: 24px;
 }
 
+.box-contact-doctor li:lang(ar) {
+  padding-right: 50px;
+  padding-left: 15px;
+}
+
 .curriculum-vitae li:last-child,
 .box-contact-doctor li:last-child {
   border-bottom: none;
@@ -2283,8 +2288,19 @@ li.w-right {
   font-size: 22px;
 }
 
+.box-contact-doctor i:lang(ar) {
+  right: 0px;
+  left: auto;
+}
+
 .box-content-doctor .btn-doctor {
   padding-left: 33px;
+}
+
+.box-content-doctor .btn-doctor:lang(ar) {
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
 }
 
 .box-wrap-details {
@@ -2965,7 +2981,7 @@ li.w-right {
   margin-top: 100px;
 }
 
-.mx-w-250{
+.mx-w-250 {
   max-width: 250px;
 }
 
@@ -3000,7 +3016,11 @@ li.w-right {
 }
 
 .normal-h1 {
-  font-size: 28px;
+  font-size: 28px !important;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
 }
 
 .theme-alert {
@@ -3060,4 +3080,9 @@ li.w-right {
   .profile-dropdown {
     display: none;
   }
+}
+
+.mirror-x {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }

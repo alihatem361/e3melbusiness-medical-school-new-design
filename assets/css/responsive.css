@@ -317,6 +317,10 @@
     font-size: 40px !important;
   }
 
+  .page-content .title-heading:lang(ar) {
+    font-size: 30px !important;
+  }
+
   .box-counter-img,
   .form-contact-us,
   .copyright,
