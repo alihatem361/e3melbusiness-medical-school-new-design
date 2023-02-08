@@ -694,6 +694,24 @@
     });
   };
 
+  $("#changeProfileBtn").on("click", function (e) {
+    e.preventDefault();
+    const input = $("#profileInput");
+    input?.trigger("click");
+  });
+
+  $("#profileInput").on("change", function (e) {
+    const file = e.target.files[0];
+    const profileImage = $("#profileImage");
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = (e) => {
+      if (profileImage?.length) {
+        profileImage.attr("src", e.target.result);
+      }
+    };
+  });
+
   // Dom Ready
   $(function () {
     if (matchMedia("only screen and (min-width: 991px)").matches) {

@@ -126,6 +126,80 @@ $(document).ready(function () {
     },
     onsubmit: () => {},
   });
+  $("#profileInforForm").validate({
+    rules: {
+      name: {
+        required: true,
+      },
+      email: {
+        required: true,
+        email: true,
+      },
+      country: {
+        required: true,
+      },
+      phone: {
+        required: true,
+        minlength: 6,
+      },
+    },
+    messages: {
+      name: "Your Name is Required.",
+      email: {
+        required: "Email address is required",
+        email: "Enter a valid Email Address",
+      },
+      country: "Your Country is Required.",
+      phone: {
+        required: "Phone Number is Required",
+        minlength: "Phone must contain at least 6 digits.",
+      },
+    },
+    errorPlacement: (error, element) => {
+      element.parent().after(error);
+      element.parent().addClass("has-error");
+    },
+    success: (error, element) => {
+      $(element).parent().removeClass("has-error");
+      error.remove();
+    },
+    onsubmit: () => {},
+  });
+  $("#profilePasswordForm").validate({
+    rules: {
+      currentPassword: {
+        required: true,
+      },
+      password: {
+        minlength: 5,
+      },
+      confirmPassword: {
+        minlength: 5,
+        equalTo: "#password",
+      },
+    },
+    messages: {
+      currentPassword: {
+        required: "Current Password is Required",
+      },
+      password: {
+        required: "Password is Required",
+        minlength: "Password must contain at least 5 characters.",
+      },
+      confirmPassword: {
+        equalTo: "Both Passwords must match.",
+      },
+    },
+    errorPlacement: (error, element) => {
+      element.parent().after(error);
+      element.parent().addClass("has-error");
+    },
+    success: (error, element) => {
+      $(element).parent().removeClass("has-error");
+      error.remove();
+    },
+    onsubmit: () => {},
+  });
   $("#resetPassForm").validate({
     rules: {
       password: {

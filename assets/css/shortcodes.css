@@ -3086,3 +3086,31 @@ li.w-right {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+
+.no-shadow {
+  box-shadow: none !important;
+}
+
+.profile-no-cert-container {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-no-cert-container i {
+  color: #7a7a7a;
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+
+.profile-no-cert-container p {
+  color: #7a7a7a;
+  font-size: 16px;
+  text-align: center !important;
+}
+
+.gap-15 {
+  gap: 15px;
+}
