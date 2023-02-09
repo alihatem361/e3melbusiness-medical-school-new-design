@@ -147,7 +147,7 @@
             <div id="site-content" class="site-content clearfix">
               <div id="inner-content" class="inner-content-wrap">
                 <div class="page-content">
-                  <section class="fl-row intro-middle">
+                  <section class="fl-row intro-middle single-course-section">
                     <div class="container">
                       <div class="row">
                         <div
@@ -158,379 +158,654 @@
                         ></div>
                       </div>
                       <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                          <div class="box-item wow fadeInUp">
-                            <div class="img">
-                              <img src="assets/image/course1.jpg" alt="image" />
-                            </div>
-                            <div class="box-wrap">
-                              <div class="title">
-                                <a href="#"
-                                  >Pharmaceutical Marketing Management</a
+                        <div class="col-lg-8 col-12 mb-lg-0 mb-4 w-100">
+                          <div class="image mb-4">
+                            <img
+                              src="./assets/image/courses-details.jpg"
+                              alt="Course"
+                            />
+                            <a href="#" class="cat-name"> Category Name </a>
+                          </div>
+                          <h2 class="fw-bold title mb-2">
+                            Strategic Marketing - Advanced
+                          </h2>
+                          <div
+                            class="meta d-flex justify-content-between flex-wrap mb-5"
+                          >
+                            <span class="instructor">
+                              <a href="#">
+                                <img
+                                  class="rounded-pill"
+                                  width="28"
+                                  src="./assets/image/user.svg"
+                                  alt="instructor name"
+                                />
+                                <small class="mx-1"></small>
+                                <strong class="fs-14"
+                                  >د/ كمال عبد الرحمن</strong
                                 >
-                              </div>
-                              <p
-                                class="pdt-10 text-color-title-sidebar box-text"
-                              >
-                                The quick, brown fox jumps over a lazy dog. DJs
-                                flock by when MTV ax quiz prog MTV quiz graced
-                              </p>
-                              <div class="meta mt-3">
-                                <div class="rate">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                                <span class="views">
-                                  <i class="fa fa-eye mr-1"></i>
-                                  10,000
-                                </span>
-                              </div>
-                              <div class="flat-read-more">
+                              </a>
+                            </span>
+                            <span class="views-count">
+                              <i class="fa fa-eye"></i>
+                              <span class="mx-1"></span>
+                              <small class="views">(+ 10,000)</small>
+                              <span class="mx-1"></span>
+                              <span class="wrap">
+                                <i class="fa fa-star fill"></i>
+                                <i class="fa fa-star fill"></i>
+                                <i class="fa fa-star fill"></i>
+                                <i class="fa fa-star fill"></i>
+                                <i class="fa fa-star fill"></i>
+                              </span>
+                            </span>
+                          </div>
+                          <div class="content-tabs">
+                            <ul
+                              class="nav nav-pills mb-3"
+                              id="pills-tab"
+                              role="tablist"
+                            >
+                              <li class="nav-item">
                                 <a
-                                  href="service-details.html"
-                                  class="themesflat-button font-default small"
+                                  class="nav-link active"
+                                  id="pills-home-tab"
+                                  data-toggle="pill"
+                                  href="#pills-home"
+                                  role="tab"
+                                  aria-controls="pills-home"
+                                  aria-selected="true"
+                                  >ملخص الدورة</a
                                 >
-                                  <span>
-                                    <i class="fa fa-arrow-left"></i>
-                                    <small>عرض المزيد</small>
-                                  </span>
-                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  class="nav-link"
+                                  id="pills-profile-tab"
+                                  data-toggle="pill"
+                                  href="#pills-profile"
+                                  role="tab"
+                                  aria-controls="pills-profile"
+                                  aria-selected="false"
+                                  >تفاصيل الدورة</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  class="nav-link"
+                                  id="pills-contact-tab"
+                                  data-toggle="pill"
+                                  href="#pills-contact"
+                                  role="tab"
+                                  aria-controls="pills-contact"
+                                  aria-selected="false"
+                                  >محتوى الدورة</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  class="nav-link"
+                                  id="pills-inst-tab"
+                                  data-toggle="pill"
+                                  href="#inst-contact"
+                                  role="tab"
+                                  aria-controls="inst-contact"
+                                  aria-selected="false"
+                                  >المحاضرين</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  class="nav-link"
+                                  id="pills-qa-tab"
+                                  data-toggle="pill"
+                                  href="#qa-contact"
+                                  role="tab"
+                                  aria-controls="qa-contact"
+                                  aria-selected="false"
+                                  >الأسئلة</a
+                                >
+                              </li>
+                            </ul>
+                            <div class="tab-content mt-5" id="pills-tabContent">
+                              <div
+                                class="tab-pane fade show active"
+                                id="pills-home"
+                                role="tabpanel"
+                                aria-labelledby="pills-home-tab"
+                              >
+                                <div class="content-wrapper">
+                                  <h4 class="fw-bold mb-3">
+                                    ملخص عن الدورة التدريبية
+                                  </h4>
+                                  <p class="mb-0">
+                                    By the end of this course; the participants
+                                    will be able to: Understand & Analyze the
+                                    strategic marketing steps & methods. Gain
+                                    competitive advantages over the similar
+                                    competitors via real life Case Studies from
+                                    Egyptian & GCC Pharmaceutical Market.
+                                  </p>
+                                </div>
+                              </div>
+                              <div
+                                class="tab-pane fade"
+                                id="pills-profile"
+                                role="tabpanel"
+                                aria-labelledby="pills-profile-tab"
+                              >
+                                <div class="content-wrapper">
+                                  <h4 class="fw-bold mb-3">
+                                    تفاصيل الدورة التدريبية
+                                  </h4>
+                                  <ul class="mb-4">
+                                    <li>Segmentation</li>
+                                    <li>Targeting</li>
+                                    <li>Positioning & USP</li>
+                                  </ul>
+                                  <div class="inner-wrap">
+                                    <p class="mb-0 text-muted">
+                                      عدد المحاضرات : 3 محاضرات
+                                    </p>
+                                    <p class="mb-0 text-muted">
+                                      مدة الدورة : 5 ساعات
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="tab-pane fade"
+                                id="pills-contact"
+                                role="tabpanel"
+                                aria-labelledby="pills-contact-tab"
+                              >
+                                <div class="content-wrapper">
+                                  <h4 class="fw-bold mb-5">
+                                    محتوى الدورة التدريبية
+                                  </h4>
+                                  <div id="accordion" class="accordion">
+                                    <div class="card">
+                                      <div class="card-header" id="h1">
+                                        <h5 class="mb-0">
+                                          <button
+                                            class="btn btn-link"
+                                            data-toggle="collapse"
+                                            data-target="#c1"
+                                            aria-expanded="true"
+                                            aria-controls="c1"
+                                          >
+                                            LECTURE ONE
+                                          </button>
+                                        </h5>
+                                      </div>
+
+                                      <div
+                                        id="c1"
+                                        class="collapse show"
+                                        aria-labelledby="h1"
+                                        data-parent="#accordion"
+                                      >
+                                        <div class="card-body py-3">
+                                          <div class="video-item">
+                                            <a href="#" class="name">
+                                              01 - Segmentation
+                                            </a>
+                                            <span class="meta">
+                                              <small class="duration fs-14"
+                                                >( 17.34 )</small
+                                              >
+                                              <span class="mx-2"></span>
+                                              <a
+                                                href="#"
+                                                class="video-link text-main"
+                                              >
+                                                <i class="fa fa-video"></i>
+                                              </a>
+                                              <span class="mx-1"></span>
+                                              <a
+                                                href="#"
+                                                class="audio-link text-main"
+                                              >
+                                                <i class="fa fa-volume-up"></i>
+                                              </a>
+                                            </span>
+                                          </div>
+                                          <div class="video-item">
+                                            <a href="#" class="name">
+                                              02 - Methods of segmentation.
+                                            </a>
+                                            <span class="meta">
+                                              <small class="duration fs-14"
+                                                >( 22.34 )</small
+                                              >
+                                              <span class="mx-2"></span>
+                                              <a
+                                                href="#"
+                                                class="video-link text-main"
+                                              >
+                                                <i class="fa fa-video"></i>
+                                              </a>
+                                              <span class="mx-1"></span>
+                                              <a
+                                                href="#"
+                                                class="audio-link text-main"
+                                              >
+                                                <i class="fa fa-volume-up"></i>
+                                              </a>
+                                            </span>
+                                          </div>
+                                          <div class="video-item disabled">
+                                            <span class="name">
+                                              03 - Methods of segmentation.
+                                            </span>
+                                            <span class="meta">
+                                              <small class="duration fs-14"
+                                                >( 22:34 )</small
+                                              >
+                                            </span>
+                                          </div>
+                                          <div class="video-item">
+                                            <a href="#" class="name">
+                                              04 - Exam of the lesson.
+                                            </a>
+                                            <span class="meta">
+                                              <a
+                                                class="bg-main rounded py-0 fs-14"
+                                                href="#"
+                                              >
+                                                ابدا الاختبار
+                                              </a>
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="card">
+                                      <div class="card-header" id="h2">
+                                        <h5 class="mb-0">
+                                          <button
+                                            class="btn btn-link collapsed"
+                                            data-toggle="collapse"
+                                            data-target="#c2"
+                                            aria-expanded="false"
+                                            aria-controls="c2"
+                                          >
+                                            LECTURE TWO
+                                          </button>
+                                        </h5>
+                                      </div>
+                                      <div
+                                        id="c2"
+                                        class="collapse"
+                                        aria-labelledby="h2"
+                                        data-parent="#accordion"
+                                      >
+                                        <div class="card-body py-3">
+                                          <div class="video-item">
+                                            <a href="#" class="name">
+                                              01 - Segmentation
+                                            </a>
+                                            <span class="meta">
+                                              <small class="duration fs-14"
+                                                >( 17.34 )</small
+                                              >
+                                              <span class="mx-2"></span>
+                                              <a
+                                                href="#"
+                                                class="video-link text-main"
+                                              >
+                                                <i class="fa fa-video"></i>
+                                              </a>
+                                              <span class="mx-1"></span>
+                                              <a
+                                                href="#"
+                                                class="audio-link text-main"
+                                              >
+                                                <i class="fa fa-volume-up"></i>
+                                              </a>
+                                            </span>
+                                          </div>
+                                          <div class="video-item">
+                                            <a href="#" class="name">
+                                              02 - Methods of segmentation.
+                                            </a>
+                                            <span class="meta">
+                                              <small class="duration fs-14"
+                                                >( 22.34 )</small
+                                              >
+                                              <span class="mx-2"></span>
+                                              <a
+                                                href="#"
+                                                class="video-link text-main"
+                                              >
+                                                <i class="fa fa-video"></i>
+                                              </a>
+                                              <span class="mx-1"></span>
+                                              <a
+                                                href="#"
+                                                class="audio-link text-main"
+                                              >
+                                                <i class="fa fa-volume-up"></i>
+                                              </a>
+                                            </span>
+                                          </div>
+                                          <div class="video-item disabled">
+                                            <span class="name">
+                                              03 - Methods of segmentation.
+                                            </span>
+                                            <span class="meta">
+                                              <small class="duration fs-14"
+                                                >( 22:34 )</small
+                                              >
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="card">
+                                      <div
+                                        class="card-header"
+                                        id="headingThree"
+                                      >
+                                        <h5 class="mb-0">
+                                          <button
+                                            class="btn btn-link collapsed"
+                                            data-toggle="collapse"
+                                            data-target="#collapseThree"
+                                            aria-expanded="false"
+                                            aria-controls="collapseThree"
+                                          >
+                                            LECTURE THREE
+                                          </button>
+                                        </h5>
+                                      </div>
+                                      <div
+                                        id="collapseThree"
+                                        class="collapse"
+                                        aria-labelledby="headingThree"
+                                        data-parent="#accordion"
+                                      >
+                                        <div class="card-body py-3">
+                                          <div class="video-item">
+                                            <a href="#" class="name">
+                                              01 - Segmentation
+                                            </a>
+                                            <span class="meta">
+                                              <small class="duration fs-14"
+                                                >( 17.34 )</small
+                                              >
+                                              <span class="mx-2"></span>
+                                              <a
+                                                href="#"
+                                                class="video-link text-main"
+                                              >
+                                                <i class="fa fa-video"></i>
+                                              </a>
+                                              <span class="mx-1"></span>
+                                              <a
+                                                href="#"
+                                                class="audio-link text-main"
+                                              >
+                                                <i class="fa fa-volume-up"></i>
+                                              </a>
+                                            </span>
+                                          </div>
+                                          <div class="video-item">
+                                            <a href="#" class="name">
+                                              02 - Methods of segmentation.
+                                            </a>
+                                            <span class="meta">
+                                              <small class="duration fs-14"
+                                                >( 22.34 )</small
+                                              >
+                                              <span class="mx-2"></span>
+                                              <a
+                                                href="#"
+                                                class="video-link text-main"
+                                              >
+                                                <i class="fa fa-video"></i>
+                                              </a>
+                                              <span class="mx-1"></span>
+                                              <a
+                                                href="#"
+                                                class="audio-link text-main"
+                                              >
+                                                <i class="fa fa-volume-up"></i>
+                                              </a>
+                                            </span>
+                                          </div>
+                                          <div class="video-item disabled">
+                                            <span class="name">
+                                              03 - Methods of segmentation.
+                                            </span>
+                                            <span class="meta">
+                                              <small class="duration fs-14"
+                                                >( 22:34 )</small
+                                              >
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="tab-pane fade"
+                                id="qa-contact"
+                                role="tabpanel"
+                                aria-labelledby="qa-contact-tab"
+                              >
+                                <div class="content-wrapper">
+                                  <h4 class="fw-bold mb-5">
+                                    استفسارات عن الدورة التدريبية
+                                  </h4>
+                                  <form
+                                    class="content-form"
+                                    id="registerForm"
+                                    action=""
+                                    method="post"
+                                    accept-charset="utf-8"
+                                  >
+                                    <div class="row">
+                                      <div class="col-12 w-100">
+                                        <div class="form-group">
+                                          <select
+                                            class="input-contact mb-2"
+                                            name="type"
+                                            id="type"
+                                          >
+                                            <option value="">
+                                              -- Select Lecture --
+                                            </option>
+                                            <option value="Lecture 1">
+                                              Lecture 1
+                                            </option>
+                                            <option value="Lecture 2">
+                                              Lecture 2
+                                            </option>
+                                            <option value="Lecture 3">
+                                              Lecture 3
+                                            </option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-12 w-100">
+                                        <div class="form-group">
+                                          <textarea
+                                            name="question"
+                                            id="question"
+                                            rows="10"
+                                            class="input-contact mb-2"
+                                            placeholder="Your Question ..."
+                                          ></textarea>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <div class="box-submit">
+                                          <button
+                                            name="submit"
+                                            id="submit"
+                                            type="submit"
+                                            class="themesflat-button bg-accent btn-submit"
+                                            role="button"
+                                          >
+                                            <span>ارسال السؤال</span>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              <div
+                                class="tab-pane fade"
+                                id="inst-contact"
+                                role="tabpanel"
+                                aria-labelledby="inst-contact-tab"
+                              >
+                                <div class="content-wrapper">
+                                  <h4 class="fw-bold mb-5">
+                                    محاضرى الدورة التدريبية
+                                  </h4>
+                                  <div class="inst-content">
+                                    <div class="row">
+                                      <div
+                                        class="col-xl-4 col-lg-5 mb-lg-0 mb-4 px-lg-2 px-4 w-100"
+                                      >
+                                        <div class="image">
+                                          <a href="#">
+                                            <img
+                                              class="rounded-circle"
+                                              src="./assets/image/team/team2.jpg"
+                                              alt="Instructor"
+                                              style="
+                                                width: 180px;
+                                                height: 180px;
+                                                border-radius: 50%;
+                                                border: 1px solid #e7e7e7;
+                                              "
+                                            />
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="col-xl-8 col-lg-7 px-lg-2 px-4"
+                                      >
+                                        <h5 class="mb-3">
+                                          <a class="fw-bold" href="#"
+                                            >الدكتور / رأفت يوسف</a
+                                          >
+                                        </h5>
+                                        <ul>
+                                          <li>
+                                            Dr. Rafat graduated with bachelor of
+                                            medicne from Cairo university,
+                                            Egypt.
+                                          </li>
+                                          <li>
+                                            He has more than 17 years of
+                                            experience as expert in management
+                                            and marketing.
+                                          </li>
+                                          <li>
+                                            He teaches in many educational
+                                            institutions such as the American
+                                            university in Cairo, the Arab
+                                            Academy for Science, Technology and
+                                            Maritime Transport, the American
+                                            Chamber of Commerce and the Egyptian
+                                            Banking Institute.
+                                          </li>
+                                          <li>
+                                            He got a doctorate in management
+                                            from Denmark.
+                                          </li>
+                                          <li>
+                                            Professionally Certified Operation
+                                            Manager from Knowledge Institute,
+                                            January 2011.
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                          <div class="box-item wow fadeInUp">
-                            <div class="img">
-                              <img src="assets/image/course2.jpg" alt="image" />
-                            </div>
-                            <div class="box-wrap">
-                              <div class="title">
-                                <a href="#">Negotiation Skills</a>
-                              </div>
-                              <p
-                                class="pdt-10 text-color-title-sidebar box-text"
-                              >
-                                The quick, brown fox jumps over a lazy dog. DJs
-                                flock by when MTV ax quiz prog MTV quiz graced
-                              </p>
-                              <div class="meta mt-3">
-                                <div class="rate">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                                <span class="views">
-                                  <i class="fa fa-eye mr-1"></i>
-                                  10,000
-                                </span>
-                              </div>
-                              <div class="flat-read-more">
-                                <a
-                                  href="service-details.html"
-                                  class="themesflat-button font-default small"
-                                >
-                                  <span
-                                    >Read More<i class="fa fa-arrow-left"></i>
-                                  </span>
-                                </a>
-                              </div>
-                            </div>
+                          <div class="my-course-rating mt-4">
+                            <h4 class="mb-3 d-flex">
+                              تقييمك للكورس :
+                              <span class="mx-2"></span>
+                              <span id="courseRating"></span>
+                            </h4>
                           </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
-                          <div class="box-item wow fadeInUp">
-                            <div class="img">
-                              <img src="assets/image/course3.jpg" alt="image" />
-                            </div>
-                            <div class="box-wrap">
-                              <div class="title">
-                                <a href="#">Tactical Marketing</a>
-                              </div>
-                              <p
-                                class="pdt-10 text-color-title-sidebar box-text"
+                        <div class="col-lg-4 col-12">
+                          <div class="info-card">
+                            <div class="info-price mb-4">
+                              <span class="price"
+                                ><small
+                                  class="revoked-price fs-28 text-secs fw-bold"
+                                  >800.00 $</small
+                                ></span
                               >
-                                The quick, brown fox jumps over a lazy dog. DJs
-                                flock by when MTV ax quiz prog MTV quiz graced
-                              </p>
-                              <div class="meta mt-3">
-                                <div class="rate">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                                <span class="views">
-                                  <i class="fa fa-eye mr-1"></i>
-                                  10,000
-                                </span>
-                              </div>
-                              <div class="flat-read-more">
-                                <a
-                                  href="service-details.html"
-                                  class="themesflat-button font-default small"
-                                >
-                                  <span
-                                    >Read More<i class="fa fa-arrow-left"></i>
-                                  </span>
-                                </a>
-                              </div>
                             </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                          <div class="box-item wow fadeInUp">
-                            <div class="img">
-                              <img src="assets/image/course1.jpg" alt="image" />
+                            <div class="info-list">
+                              <ul>
+                                <li>
+                                  <div class="wrap fs-14">
+                                    <i class="fa fa-user"></i>
+                                    <span class="mx-1"></span>
+                                    <span>المحاضر</span>
+                                  </div>
+                                  <span class="fs-14">أسماء الخبيرى</span>
+                                </li>
+                                <li>
+                                  <div class="wrap fs-14">
+                                    <i class="fa fa-clock"></i>
+                                    <span class="mx-1"></span>
+                                    <span>مدة الدورة</span>
+                                  </div>
+                                  <span class="fs-14">5H : 30M</span>
+                                </li>
+                                <li>
+                                  <div class="wrap fs-14">
+                                    <i class="fa fa-book-reader"></i>
+                                    <span class="mx-1"></span>
+                                    <span>المحاضرات</span>
+                                  </div>
+                                  <span class="fs-14">25 Lec</span>
+                                </li>
+                                <li>
+                                  <div class="wrap fs-14">
+                                    <i class="fa fa-globe"></i>
+                                    <span class="mx-1"></span>
+                                    <span>اللغة</span>
+                                  </div>
+                                  <span class="fs-14">الإنجليزية</span>
+                                </li>
+                                <li>
+                                  <div class="wrap fs-14">
+                                    <i class="fa fa-graduation-cap"></i>
+                                    <span class="mx-1"></span>
+                                    <span>الشهادات</span>
+                                  </div>
+                                  <span class="fs-14">نعم</span>
+                                </li>
+                              </ul>
                             </div>
-                            <div class="box-wrap">
-                              <div class="title">
-                                <a href="#"
-                                  >Pharmaceutical Marketing Management</a
-                                >
-                              </div>
-                              <p
-                                class="pdt-10 text-color-title-sidebar box-text"
+                            <div class="info-btn mt-4">
+                              <a
+                                href="#"
+                                class="bg-main py-2 fs-14 px-4 rounded d-block w-100"
+                                >التحق الآن</a
                               >
-                                The quick, brown fox jumps over a lazy dog. DJs
-                                flock by when MTV ax quiz prog MTV quiz graced
-                              </p>
-                              <div class="meta mt-3">
-                                <div class="rate">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                                <span class="views">
-                                  <i class="fa fa-eye mr-1"></i>
-                                  10,000
-                                </span>
-                              </div>
-                              <div class="flat-read-more">
-                                <a
-                                  href="service-details.html"
-                                  class="themesflat-button font-default small"
-                                >
-                                  <span
-                                    >Read More<i class="fa fa-arrow-right"></i>
-                                  </span>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                          <div class="box-item wow fadeInUp">
-                            <div class="img">
-                              <img src="assets/image/course2.jpg" alt="image" />
-                            </div>
-                            <div class="box-wrap">
-                              <div class="title">
-                                <a href="#">Negotiation Skills</a>
-                              </div>
-                              <p
-                                class="pdt-10 text-color-title-sidebar box-text"
-                              >
-                                The quick, brown fox jumps over a lazy dog. DJs
-                                flock by when MTV ax quiz prog MTV quiz graced
-                              </p>
-                              <div class="meta mt-3">
-                                <div class="rate">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                                <span class="views">
-                                  <i class="fa fa-eye mr-1"></i>
-                                  10,000
-                                </span>
-                              </div>
-                              <div class="flat-read-more">
-                                <a
-                                  href="service-details.html"
-                                  class="themesflat-button font-default small"
-                                >
-                                  <span
-                                    >Read More<i class="fa fa-arrow-right"></i>
-                                  </span>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                          <div class="box-item wow fadeInUp">
-                            <div class="img">
-                              <img src="assets/image/course3.jpg" alt="image" />
-                            </div>
-                            <div class="box-wrap">
-                              <div class="title">
-                                <a href="#">Tactical Marketing</a>
-                              </div>
-                              <p
-                                class="pdt-10 text-color-title-sidebar box-text"
-                              >
-                                The quick, brown fox jumps over a lazy dog. DJs
-                                flock by when MTV ax quiz prog MTV quiz graced
-                              </p>
-                              <div class="meta mt-3">
-                                <div class="rate">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                                <span class="views">
-                                  <i class="fa fa-eye mr-1"></i>
-                                  10,000
-                                </span>
-                              </div>
-                              <div class="flat-read-more">
-                                <a
-                                  href="service-details.html"
-                                  class="themesflat-button font-default small"
-                                >
-                                  <span
-                                    >Read More<i class="fa fa-arrow-right"></i>
-                                  </span>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                          <div class="box-item wow fadeInUp">
-                            <div class="img">
-                              <img src="assets/image/course1.jpg" alt="image" />
-                            </div>
-                            <div class="box-wrap">
-                              <div class="title">
-                                <a href="#"
-                                  >Pharmaceutical Marketing Management</a
-                                >
-                              </div>
-                              <p
-                                class="pdt-10 text-color-title-sidebar box-text"
-                              >
-                                The quick, brown fox jumps over a lazy dog. DJs
-                                flock by when MTV ax quiz prog MTV quiz graced
-                              </p>
-                              <div class="meta mt-3">
-                                <div class="rate">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                                <span class="views">
-                                  <i class="fa fa-eye mr-1"></i>
-                                  10,000
-                                </span>
-                              </div>
-                              <div class="flat-read-more">
-                                <a
-                                  href="service-details.html"
-                                  class="themesflat-button font-default small"
-                                >
-                                  <span
-                                    >Read More<i class="fa fa-arrow-right"></i>
-                                  </span>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                          <div class="box-item wow fadeInUp">
-                            <div class="img">
-                              <img src="assets/image/course2.jpg" alt="image" />
-                            </div>
-                            <div class="box-wrap">
-                              <div class="title">
-                                <a href="#">Negotiation Skills</a>
-                              </div>
-                              <p
-                                class="pdt-10 text-color-title-sidebar box-text"
-                              >
-                                The quick, brown fox jumps over a lazy dog. DJs
-                                flock by when MTV ax quiz prog MTV quiz graced
-                              </p>
-                              <div class="meta mt-3">
-                                <div class="rate">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                                <span class="views">
-                                  <i class="fa fa-eye mr-1"></i>
-                                  10,000
-                                </span>
-                              </div>
-                              <div class="flat-read-more">
-                                <a
-                                  href="service-details.html"
-                                  class="themesflat-button font-default small"
-                                >
-                                  <span
-                                    >Read More<i class="fa fa-arrow-right"></i>
-                                  </span>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                          <div class="box-item wow fadeInUp">
-                            <div class="img">
-                              <img src="assets/image/course3.jpg" alt="image" />
-                            </div>
-                            <div class="box-wrap">
-                              <div class="title">
-                                <a href="#">Tactical Marketing</a>
-                              </div>
-                              <p
-                                class="pdt-10 text-color-title-sidebar box-text"
-                              >
-                                The quick, brown fox jumps over a lazy dog. DJs
-                                flock by when MTV ax quiz prog MTV quiz graced
-                              </p>
-                              <div class="meta mt-3">
-                                <div class="rate">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                                <span class="views">
-                                  <i class="fa fa-eye mr-1"></i>
-                                  10,000
-                                </span>
-                              </div>
-                              <div class="flat-read-more">
-                                <a
-                                  href="service-details.html"
-                                  class="themesflat-button font-default small"
-                                >
-                                  <span
-                                    >Read More<i class="fa fa-arrow-right"></i>
-                                  </span>
-                                </a>
-                              </div>
                             </div>
                           </div>
                         </div>
@@ -743,7 +1018,23 @@
     <script type="text/javascript" src="javascript/jquery.easing.js"></script>
     <!--animation-->
     <script src="assets/animation/wow.min.js"></script>
+    <script src="javascript/jquery.emojiRatings.min.js"></script>
     <script src="javascript/animation.js"></script>
     <script type="text/javascript" src="javascript/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        const options = {
+          emoji: "U+2B50",
+          count: 5,
+          fontSize: 16,
+          inputName: "rating",
+          onUpdate: function (e) {
+            // Return the number of rating (1/2/3/4/5).
+            const rating = e;
+          },
+        };
+        $("#courseRating").emojiRating(options);
+      });
+    </script>
   </body>
 </html>
