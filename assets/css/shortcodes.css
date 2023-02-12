@@ -3096,6 +3096,10 @@ li.w-right {
   text-align: center !important;
 }
 
+.gap-5 {
+  gap: 5px;
+}
+
 .gap-15 {
   gap: 15px;
 }
