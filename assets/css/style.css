@@ -5689,3 +5689,125 @@ small:lang(ar) {
   font-weight: 700;
   margin-bottom: 15px;
 }
+
+/*cart styles */
+
+.cart-content {
+  background-color: #ffffff;
+  padding: 20px 25px;
+  overflow: auto;
+  box-shadow: 0 0 5px #eeeeee;
+  border-radius: 8px;
+}
+
+.cart-table {
+  min-width: 600px;
+}
+
+.cart-content::-webkit-scrollbar {
+  height: 5px;
+}
+
+.cart-content::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.cart-content::-webkit-scrollbar-thumb {
+  background-color: #c8c8c8;
+  border-radius: 20px;
+}
+
+.cart-table td {
+  vertical-align: middle;
+}
+
+.cart-table .cart-row {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.cart-table .cart-row:last-child {
+  border-bottom: 0;
+}
+
+.cart-table .cart-row:last-child td {
+  padding-bottom: 10px;
+}
+
+.cart-table .cart-row td {
+  padding: 25px 0;
+}
+
+.cart-table .cart-row .action button {
+  background-color: transparent;
+  color: #ff3535;
+  border: 1px solid #ff3535;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  color: #ff3535;
+}
+
+.cart-table .cart-row p {
+  line-height: 22px;
+  font-size: 14px;
+}
+
+.cart-table .cart-row .price {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+}
+
+.checkout-card {
+  background-color: #ffffff;
+  padding: 20px 25px;
+  overflow: auto;
+  box-shadow: 0 0 5px #eeeeee;
+  border-radius: 8px;
+}
+
+.discount-form input[type="text"] {
+  height: 40px !important;
+}
+
+.discount-form input[type="text"]::placeholder {
+  font-size: 14px;
+}
+
+.coupon-btn {
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  padding: 5px !important;
+  border-radius: 3px;
+  background-color: var(--primary-color2);
+  border: 1px solid var(--primary-color2);
+}
+
+.checkout-card {
+  position: relative;
+  padding-bottom: 70px;
+  height: 100%;
+  min-height: 385px;
+}
+
+.checkout-card .confirm-order-btn {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  width: 88%;
+  padding: 10px 20px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 4px;
+}
+
+.checkout-card .text {
+  line-height: 16px;
+  font-size: 11px;
+}
+
+.checkout-card .text small {
+  position: relative;
+  top: 2px;
+}

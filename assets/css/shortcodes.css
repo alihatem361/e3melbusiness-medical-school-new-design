@@ -3107,3 +3107,27 @@ li.w-right {
 .text-muted {
   color: #818181 !important;
 }
+
+.header-border-bottom {
+  border-bottom: 1px solid #dedede;
+}
+
+.text-dark {
+  color: #000000;
+}
+
+.text-start {
+  text-align: left;
+}
+
+.text-start:lang(ar) {
+  text-align: right;
+}
+
+.text-end {
+  text-align: right;
+}
+
+.text-end:lang(ar) {
+  text-align: left;
+}
