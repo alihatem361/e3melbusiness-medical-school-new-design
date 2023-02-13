@@ -5960,6 +5960,70 @@ small:lang(ar) {
   font-size: 13px;
 }
 
+.course-video-wrapper .content-wrapper .exam-wrapper {
+  position: relative;
+  border-bottom: 1px solid #dedede;
+  overflow: auto;
+  height: calc(86vh - 100px);
+}
+
+.course-video-wrapper .content-wrapper .exam-content {
+  padding: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .course-video-wrapper .content-wrapper .exam-content {
+    padding: 20px;
+  }
+}
+
+.course-video-wrapper .content-wrapper .exam-content .exam-title {
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+.course-video-wrapper .content-wrapper .exam-content .exam-title h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.course-video-wrapper .content-wrapper .exam-content .exam-body {
+  margin-top: 30px;
+}
+
+.course-video-wrapper .content-wrapper .exam-content .exam-body .question {
+  margin-bottom: 25px;
+}
+
+.course-video-wrapper
+  .content-wrapper
+  .exam-content
+  .exam-body
+  .question
+  .qtitle {
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.course-video-wrapper
+  .content-wrapper
+  .exam-content
+  .exam-body
+  .question
+  .q-answers
+  .form-check {
+  margin-bottom: 0;
+  float: none !important;
+}
+
+.course-video-wrapper .content-wrapper .exam-content .action button {
+  padding: 8px 20px !important;
+  font-size: 15px;
+}
+
 .course-video-wrapper .content-wrapper .curr-controls {
   padding: 30px 20px;
   display: flex;
