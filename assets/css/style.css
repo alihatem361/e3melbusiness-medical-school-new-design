@@ -1464,7 +1464,9 @@ input::-moz-focus-inner {
 }
 
 body {
-  font: 16px/30px "Rubik", sans-serif;
+  font:
+    16px/30px "Rubik",
+    sans-serif;
   font-weight: 400;
   background-color: #fff;
   color: #798883;
@@ -5539,9 +5541,231 @@ small:lang(ar) {
   border: 1px solid #ffffffb6;
 }
 
+/* Accreditation pages image sizing */
+.accreditation-page .intro-middle .image img,
+.accreditation-details-page .intro-middle .image img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.accreditation-page .box-item .img img,
+.accreditation-details-page .box-item .img img {
+  height: 180px;
+  object-fit: contain;
+  object-position: center;
+  background: #ffffff;
+}
+
+.accreditation-page .intro-middle .text,
+.accreditation-details-page .intro-middle .text,
+.accreditation-page .cat-courses-section .details,
+.accreditation-details-page .cat-courses-section .details {
+  text-align: right;
+}
+
+.accreditation-page .box-item,
+.accreditation-details-page .box-item {
+  height: 100%;
+}
+
+.accreditation-page .cat-courses-section .box-item,
+.accreditation-details-page .cat-courses-section .box-item {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 22px rgb(157 184 209 / 19%);
+  overflow: hidden;
+}
+
+.accreditation-page .cat-courses-section .box-item .img,
+.accreditation-details-page .cat-courses-section .box-item .img {
+  width: 40%;
+  flex: 0 0 40%;
+}
+
+.accreditation-page .cat-courses-section .box-item .img a,
+.accreditation-details-page .cat-courses-section .box-item .img a,
+.accreditation-page .cat-courses-section .box-item .img img,
+.accreditation-details-page .cat-courses-section .box-item .img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.accreditation-page .box-item .box-wrap,
+.accreditation-details-page .box-item .box-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
+  text-align: right;
+}
+
+.accreditation-page .cat-courses-section .box-item .box-wrap,
+.accreditation-details-page .cat-courses-section .box-item .box-wrap {
+  width: 60%;
+  flex: 1;
+  margin: 0;
+  top: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 20px 18px 16px;
+}
+
+.accreditation-page .box-item .flat-read-more,
+.accreditation-details-page .box-item .flat-read-more {
+  margin-top: auto;
+  text-align: left;
+}
+
+@media only screen and (max-width: 767px) {
+  .accreditation-page .intro-middle .image img,
+  .accreditation-details-page .intro-middle .image img {
+    max-height: 210px;
+  }
+
+  .accreditation-page .box-item .img img,
+  .accreditation-details-page .box-item .img img {
+    height: 150px;
+  }
+
+  .accreditation-page .box-item .box-wrap,
+  .accreditation-details-page .box-item .box-wrap {
+    min-height: 0;
+  }
+
+  .accreditation-page .cat-courses-section .box-item,
+  .accreditation-details-page .cat-courses-section .box-item {
+    display: block;
+  }
+
+  .accreditation-page .cat-courses-section .box-item .img,
+  .accreditation-details-page .cat-courses-section .box-item .img,
+  .accreditation-page .cat-courses-section .box-item .box-wrap,
+  .accreditation-details-page .cat-courses-section .box-item .box-wrap {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
 .single-course-section .title {
   font-size: 24px;
   color: #000000;
+}
+
+/* Diploma details accreditation showcase */
+.diploma-details-page .cat-courses-section .box-item {
+  display: none;
+}
+
+.diploma-details-page .diploma-accreditations-wrap {
+  background: linear-gradient(180deg, #f6f7f9 0%, #f1f3f5 100%);
+  border: 1px solid #e6e8ec;
+  border-radius: 12px;
+  padding: 50px 24px 28px;
+}
+
+.diploma-details-page .diploma-accreditations-subtitle {
+  max-width: 760px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #58677a;
+  line-height: 1.9;
+}
+
+.diploma-details-page .diploma-accreditation-card {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1px solid #e3e7ee;
+  border-radius: 12px;
+  padding: 16px 10px;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(16, 53, 82, 0.06);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.diploma-details-page .diploma-accreditation-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 180, 81, 0.45);
+  box-shadow: 0 12px 24px rgba(16, 53, 82, 0.14);
+}
+
+.diploma-details-page .diploma-accreditation-card img {
+  max-width: 100%;
+  max-height: 70px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.diploma-details-page .diploma-accreditation-card span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #103552;
+  letter-spacing: 0.2px;
+}
+
+.diploma-details-page .diploma-accreditations-link-wrap {
+  padding-top: 4px;
+}
+
+.diploma-details-page .diploma-accreditations-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #103552;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.diploma-details-page .diploma-accreditations-link i {
+  font-size: 13px;
+  transition: transform 0.2s ease;
+}
+
+.diploma-details-page .diploma-accreditations-link:hover {
+  color: var(--primary-color2);
+  border-bottom-color: var(--primary-color2);
+}
+
+.diploma-details-page .diploma-accreditations-link:hover i {
+  transform: translateX(-4px);
+}
+
+@media only screen and (max-width: 767px) {
+  .diploma-details-page .diploma-accreditations-wrap {
+    padding: 32px 14px 10px;
+  }
+
+  .diploma-details-page .diploma-accreditation-card {
+    height: 110px;
+    gap: 8px;
+    padding: 12px 8px;
+  }
+
+  .diploma-details-page .diploma-accreditation-card img {
+    max-height: 55px;
+  }
+
+  .diploma-details-page .diploma-accreditation-card span {
+    font-size: 11px;
+  }
 }
 
 .single-course-section .content-tabs .nav-pills {
