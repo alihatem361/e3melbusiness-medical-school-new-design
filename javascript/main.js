@@ -231,6 +231,39 @@
     });
   };
 
+  var WhatWeDoSlider = function () {
+    if ($().owlCarousel) {
+      $(".what-we-do-slider").each(function () {
+        var $slider = $(this);
+        if ($slider.hasClass("owl-loaded")) return;
+
+        $slider.owlCarousel({
+          loop: true,
+          nav: false,
+          dots: true,
+          autoplay: true,
+          autoplayTimeout: 4200,
+          smartSpeed: 700,
+          margin: 14,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            575: {
+              items: 1,
+            },
+            768: {
+              items: 2,
+            },
+            1200: {
+              items: 3,
+            },
+          },
+        });
+      });
+    }
+  };
+
   var parallax = function () {
     if ($().parallax && isMobile.any() === null) {
       $(".parallax1").parallax("50%", 0.5);
@@ -712,6 +745,158 @@
     };
   });
 
+  var CruisaraHomepage = function () {
+    var $tourCards = $(".js-tour-card");
+    var $filterButtons = $(".js-tour-filter");
+    var $cityFilter = $("#tour-city-filter");
+    var $dateFilter = $("#tour-date-filter");
+    var $searchForm = $("#tour-search-form");
+    var $resultsCount = $("#tour-results-count");
+    var $clearFilters = $("#tour-clear-filters");
+    var $emptyState = $(".js-tour-empty");
+    var $focusSearchButton = $("#focus-tour-search");
+    var $featuredSection = $("#featured");
+    var activeCategory = "";
+
+    if (!$tourCards.length) {
+      return;
+    }
+
+    var scrollToFeatured = function () {
+      if (!$featuredSection.length) return;
+
+      $("html, body").animate(
+        {
+          scrollTop: Math.max($featuredSection.offset().top - 120, 0),
+        },
+        400
+      );
+    };
+
+    var scrollToSearch = function () {
+      if (!$searchForm.length) return;
+
+      $("html, body").animate(
+        {
+          scrollTop: Math.max($searchForm.offset().top - 140, 0),
+        },
+        400
+      );
+    };
+
+    var getSelectedMonth = function () {
+      var dateValue = $dateFilter.val();
+      if (!dateValue) return "";
+
+      var parsedDate = new Date(dateValue);
+      if (Number.isNaN(parsedDate.getTime())) return "";
+
+      return String(parsedDate.getMonth() + 1);
+    };
+
+    var updateCountText = function (count) {
+      var noun = count === 1 ? "expedition" : "expeditions";
+      $resultsCount.text(count + " " + noun + " ready for you");
+    };
+
+    var toggleClearButton = function () {
+      var hasFilters =
+        !!activeCategory ||
+        ($cityFilter.val() && $cityFilter.val() !== "all") ||
+        !!$dateFilter.val();
+
+      $clearFilters.toggleClass("is-visible", hasFilters);
+    };
+
+    var applyFilters = function (shouldScroll) {
+      var selectedCity = $cityFilter.val() || "all";
+      var selectedMonth = getSelectedMonth();
+      var visibleCount = 0;
+
+      $tourCards.each(function () {
+        var $card = $(this);
+        var categories = ($card.attr("data-category") || "").split(" ");
+        var months = ($card.attr("data-months") || "").split(",");
+        var matchesCategory =
+          !activeCategory || categories.indexOf(activeCategory) !== -1;
+        var matchesCity =
+          selectedCity === "all" ||
+          ($card.attr("data-city") || "") === selectedCity;
+        var matchesMonth =
+          !selectedMonth || months.indexOf(selectedMonth) !== -1;
+        var shouldShow = matchesCategory && matchesCity && matchesMonth;
+
+        $card.toggle(shouldShow);
+        if (shouldShow) {
+          visibleCount += 1;
+        }
+      });
+
+      updateCountText(visibleCount);
+      toggleClearButton();
+      $emptyState.attr("hidden", visibleCount !== 0);
+
+      if (shouldScroll) {
+        scrollToFeatured();
+      }
+    };
+
+    $filterButtons.on("click", function () {
+      var $button = $(this);
+      var buttonFilter = $button.attr("data-filter");
+      activeCategory = activeCategory === buttonFilter ? "" : buttonFilter;
+
+      $filterButtons.removeClass("is-active").attr("aria-pressed", "false");
+
+      if (activeCategory) {
+        $filterButtons
+          .filter('[data-filter="' + activeCategory + '"]')
+          .addClass("is-active")
+          .attr("aria-pressed", "true");
+      }
+
+      applyFilters(false);
+    });
+
+    $searchForm.on("submit", function (e) {
+      e.preventDefault();
+      applyFilters(true);
+    });
+
+    $cityFilter.on("change", function () {
+      applyFilters(false);
+    });
+
+    $dateFilter.on("focus", function () {
+      $(this).attr("type", "date");
+    });
+
+    $dateFilter.on("blur", function () {
+      if (!$(this).val()) {
+        $(this).attr("type", "text");
+      }
+    });
+
+    $dateFilter.on("change", function () {
+      applyFilters(false);
+    });
+
+    $clearFilters.on("click", function () {
+      activeCategory = "";
+      $filterButtons.removeClass("is-active").attr("aria-pressed", "false");
+      $cityFilter.val("all");
+      $dateFilter.val("").attr("type", "text");
+      applyFilters(false);
+    });
+
+    $focusSearchButton.on("click", function () {
+      scrollToSearch();
+      $cityFilter.trigger("focus");
+    });
+
+    applyFilters(false);
+  };
+
   // Dom Ready
   $(function () {
     if (matchMedia("only screen and (min-width: 991px)").matches) {
@@ -724,6 +909,7 @@
     ClientCarousel();
     iconboxCarousel();
     Testimonials();
+    WhatWeDoSlider();
     parallax();
     flatCounter();
     progressBar();
@@ -734,6 +920,7 @@
     flatTabs();
     flatIsotopeCase();
     flatAccordion();
+    CruisaraHomepage();
     removePreloader();
   });
 })(jQuery);

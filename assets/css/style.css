@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Abhaya+Libre:wght@600;700;800&family=Epilogue:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
 @import "bootstrap.css";
 @import "icomoon.css";
 @import "owl.carousel.css";
@@ -5562,7 +5563,7 @@ small:lang(ar) {
 .accreditation-details-page .intro-middle .text,
 .accreditation-page .cat-courses-section .details,
 .accreditation-details-page .cat-courses-section .details {
-  text-align: right;
+  text-align: start;
 }
 
 .accreditation-page .box-item,
@@ -5601,7 +5602,7 @@ small:lang(ar) {
   display: flex;
   flex-direction: column;
   min-height: 220px;
-  text-align: right;
+  text-align: start;
 }
 
 .accreditation-page .cat-courses-section .box-item .box-wrap,
@@ -5618,7 +5619,7 @@ small:lang(ar) {
 .accreditation-page .box-item .flat-read-more,
 .accreditation-details-page .box-item .flat-read-more {
   margin-top: auto;
-  text-align: left;
+  text-align: start;
 }
 
 @media only screen and (max-width: 767px) {
@@ -5748,6 +5749,112 @@ small:lang(ar) {
   transform: translateX(-4px);
 }
 
+/* Homepage accreditation slider */
+.home-accreditations-section {
+  position: relative;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(0, 180, 81, 0.08), transparent 38%),
+    linear-gradient(180deg, #f8fafc 0%, #eff4f8 100%);
+}
+
+.home-accreditations-section .box-heading-process {
+  margin-bottom: 36px;
+}
+
+.home-accreditations-subtitle {
+  max-width: 820px;
+  margin: 14px auto 0;
+  color: #58677a;
+  line-height: 1.85;
+  font-size: 17px;
+}
+
+.home-accreditations-slider {
+  direction: ltr;
+}
+
+.home-accreditations-slider .owl-stage {
+  display: flex;
+}
+
+.home-accreditations-slider .owl-item {
+  display: flex;
+}
+
+.home-accreditations-slider .accreditation-slide-item {
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+}
+
+.home-accreditation-card {
+  min-height: 240px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: #ffffff;
+  border: 1px solid #e1e8f0;
+  border-radius: 14px;
+  padding: 28px 18px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(16, 53, 82, 0.08);
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease;
+}
+
+.home-accreditation-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 180, 81, 0.5);
+  box-shadow: 0 14px 28px rgba(16, 53, 82, 0.16);
+}
+
+.home-accreditation-card img {
+  width: auto;
+  max-width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+.home-accreditation-card span {
+  color: #103552;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.home-accreditations-slider .owl-dots {
+  margin-top: 20px;
+}
+
+.home-accreditations-slider .owl-dot span {
+  background: #c6d5e3;
+}
+
+.home-accreditations-slider .owl-dot.active span,
+.home-accreditations-slider .owl-dot:hover span {
+  background: var(--primary-color2);
+}
+
+@media only screen and (max-width: 991px) {
+  .home-accreditations-subtitle {
+    font-size: 16px;
+  }
+
+  .home-accreditation-card {
+    min-height: 210px;
+    padding: 22px 14px;
+  }
+
+  .home-accreditation-card img {
+    max-height: 105px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .diploma-details-page .diploma-accreditations-wrap {
     padding: 32px 14px 10px;
@@ -5763,6 +5870,31 @@ small:lang(ar) {
     max-height: 55px;
   }
 
+  .home-accreditations-section .box-heading-process {
+    margin-bottom: 24px;
+  }
+
+  .home-accreditations-subtitle {
+    margin-top: 10px;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  .home-accreditation-card {
+    min-height: 190px;
+    border-radius: 12px;
+    padding: 18px 12px;
+    gap: 10px;
+  }
+
+  .home-accreditation-card img {
+    max-height: 90px;
+  }
+
+  .home-accreditation-card span {
+    font-size: 14px;
+  }
+
   .diploma-details-page .diploma-accreditation-card span {
     font-size: 11px;
   }
@@ -5771,6 +5903,192 @@ small:lang(ar) {
 .single-course-section .content-tabs .nav-pills {
   flex-wrap: wrap;
   gap: 15px;
+}
+
+/* Home - What We Do slider */
+.what-we-do-slider-section {
+  position: relative;
+  background:
+    radial-gradient(
+      circle at 12% 20%,
+      rgba(0, 180, 81, 0.08) 0%,
+      transparent 40%
+    ),
+    linear-gradient(180deg, #f7fafc 0%, #ffffff 100%);
+}
+
+.what-we-do-slider-section .what-we-do-subtitle {
+  margin-top: 10px;
+  color: #5f7085;
+  line-height: 1.8;
+  max-width: 720px;
+}
+
+.what-we-do-head-link {
+  text-align: right;
+}
+
+.what-we-do-view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #103552;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.what-we-do-view-all i {
+  font-size: 12px;
+}
+
+.what-we-do-view-all:hover {
+  color: var(--primary-color2);
+  border-color: var(--primary-color2);
+}
+
+.what-we-do-slider .item {
+  padding: 8px;
+}
+
+.what-we-do-card {
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e3e8ef;
+  background-color: #ffffff;
+  box-shadow: 0 8px 24px rgba(16, 53, 82, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.what-we-do-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 34px rgba(16, 53, 82, 0.14);
+  border-color: rgba(0, 180, 81, 0.35);
+}
+
+.what-we-do-media {
+  height: 180px;
+  background: linear-gradient(180deg, #eef3f8 0%, #f7fafc 100%);
+}
+
+.what-we-do-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.what-we-do-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 230px;
+  padding: 18px 18px 16px;
+}
+
+.what-we-do-chip {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 999px;
+  background-color: rgba(0, 180, 81, 0.12);
+  color: #0f8d49;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+}
+
+.what-we-do-content h3 {
+  margin-top: 12px;
+  margin-bottom: 8px;
+  font-size: 21px;
+  line-height: 1.35;
+  color: #103552;
+}
+
+.what-we-do-content p {
+  color: #63758a;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.what-we-do-link {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  color: #103552;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.what-we-do-link i {
+  font-size: 12px;
+  transition: transform 0.25s ease;
+}
+
+.what-we-do-link:hover {
+  color: var(--primary-color2);
+  border-color: var(--primary-color2);
+}
+
+.what-we-do-link:hover i {
+  transform: translateX(4px);
+}
+
+.what-we-do-slider.owl-theme .owl-dots {
+  margin-top: 18px;
+}
+
+.what-we-do-slider .owl-nav {
+  display: none !important;
+}
+
+.what-we-do-slider.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 4px;
+  background: #c8d3df;
+  transition: all 0.2s ease;
+}
+
+.what-we-do-slider.owl-theme .owl-dots .owl-dot.active span,
+.what-we-do-slider.owl-theme .owl-dots .owl-dot:hover span {
+  width: 28px;
+  border-radius: 8px;
+  background: var(--primary-color2);
+}
+
+@media only screen and (max-width: 991px) {
+  .what-we-do-head-link {
+    text-align: left;
+  }
+
+  .what-we-do-content {
+    min-height: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .what-we-do-media {
+    height: 170px;
+  }
+
+  .what-we-do-content h3 {
+    font-size: 19px;
+  }
 }
 
 .single-course-section .content-tabs .nav-pills .nav-item {
@@ -6506,4 +6824,1303 @@ small:lang(ar) {
 
 .yotta-dropdown-style1 .yotta-menu .yotta-menu-item .yotta-menu-link strong {
   color: #194294;
+}
+
+/* Cruisara home page */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.cruisara-homepage {
+  background: #fff4f3;
+}
+
+.cruisara-homepage #page {
+  background: #fff4f3;
+}
+
+.cruisara-container {
+  max-width: 1216px;
+}
+
+.cruisara-homepage .header {
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid rgba(224, 156, 149, 0.15);
+}
+
+.cruisara-homepage .header.downscrolled {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(18px);
+}
+
+#site-header.cruisara-site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 32px;
+}
+
+#site-header.cruisara-site-header .logo {
+  width: auto;
+  padding-left: 0;
+  flex: 0 0 auto;
+}
+
+#site-header.cruisara-site-header .contact {
+  width: auto;
+  flex: 0 0 auto;
+}
+
+#site-header.cruisara-site-header .nav-wrap {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.cruisara-logo a {
+  display: inline-flex;
+  align-items: center;
+  font-family: "Epilogue", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: #0f172a;
+}
+
+.cruisara-homepage #mainnav {
+  display: flex;
+  justify-content: center;
+}
+
+.cruisara-homepage #mainnav .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.cruisara-homepage #mainnav .menu > li {
+  float: none;
+  margin: 0;
+}
+
+.cruisara-homepage #mainnav .menu > li > a {
+  position: relative;
+  padding: 0 0 8px;
+  line-height: 1;
+  font-family: "Epilogue", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.025em;
+}
+
+.cruisara-homepage #mainnav .menu > li > a::before {
+  display: none;
+}
+
+.cruisara-homepage #mainnav .menu > li.active > a,
+.cruisara-homepage #mainnav .menu > li > a:hover {
+  color: #ea580c;
+}
+
+.cruisara-homepage #mainnav .menu > li.active > a {
+  border-bottom: 2px solid #f97316;
+}
+
+.cruisara-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.cruisara-search-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #0f172a;
+  font-size: 16px;
+}
+
+.cruisara-search-icon:hover {
+  color: #ea580c;
+}
+
+.cruisara-book-now {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 122px;
+  padding: 10px 24px;
+  border-radius: 999px;
+  background: #fe7e4f;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #491300;
+  box-shadow: 0 10px 24px rgba(254, 126, 79, 0.22);
+}
+
+.cruisara-book-now:hover {
+  background: #f97316;
+  color: #fff;
+}
+
+.cruisara-hero {
+  position: relative;
+  min-height: 870px;
+  padding-top: 76px;
+  overflow: hidden;
+}
+
+.cruisara-hero__media,
+.cruisara-hero__overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.cruisara-hero__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cruisara-hero__overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.05) 44%,
+    rgba(0, 0, 0, 0.45) 100%
+  );
+}
+
+.cruisara-hero > .cruisara-container {
+  position: relative;
+  z-index: 2;
+}
+
+.cruisara-hero > .cruisara-container:first-of-type {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 630px;
+}
+
+.cruisara-hero > .cruisara-container:last-of-type {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 48px;
+  z-index: 3;
+}
+
+.cruisara-hero__content {
+  text-align: center;
+}
+
+.cruisara-hero__title {
+  margin: 0;
+  font-family: "Epilogue", sans-serif;
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  color: #fff;
+  text-shadow: 0 25px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cruisara-hero__title span {
+  display: block;
+}
+
+.cruisara-search {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0;
+  max-width: 896px;
+  margin: 0 auto;
+  padding: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 25px 50px -12px rgba(78, 33, 30, 0.1);
+}
+
+.cruisara-search__field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 56px;
+  padding: 0 24px;
+}
+
+.cruisara-search__field:first-child::after {
+  content: "\f107";
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  font-family: "FontAwesome";
+  font-size: 14px;
+  color: #6b7280;
+  pointer-events: none;
+}
+
+.cruisara-search__field + .cruisara-search__field {
+  border-left: 1px solid rgba(224, 156, 149, 0.2);
+}
+
+.cruisara-search__field i {
+  margin-right: 12px;
+  color: #006668;
+  font-size: 18px;
+}
+
+.cruisara-search__field select,
+.cruisara-search__field input {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #6b7280;
+  box-shadow: none;
+}
+
+.cruisara-search__field select {
+  appearance: none;
+  padding-right: 28px;
+  cursor: pointer;
+}
+
+.cruisara-search__field select:focus,
+.cruisara-search__field input:focus {
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  color: #0f172a;
+}
+
+.cruisara-search__field input::placeholder {
+  color: #6b7280;
+}
+
+.cruisara-search__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 143px;
+  min-height: 56px;
+  padding: 16px 32px;
+  border: 0;
+  border-radius: 999px;
+  background: #006668;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.cruisara-search__button:hover {
+  background: #0a8082;
+}
+
+.cruisara-filters-section {
+  padding: 80px 0;
+  background: #fff4f3;
+}
+
+.cruisara-filters {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px 64px;
+}
+
+.cruisara-filter-chip {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.cruisara-filter-chip__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #ffedeb;
+  color: #006668;
+  font-size: 24px;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.cruisara-filter-chip__label {
+  font-family: "Epilogue", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #4e211e;
+}
+
+.cruisara-filter-chip:hover .cruisara-filter-chip__icon,
+.cruisara-filter-chip.is-active .cruisara-filter-chip__icon {
+  background: #006668;
+  color: #fff;
+  transform: translateY(-4px);
+}
+
+.cruisara-featured {
+  padding: 80px 0;
+  background: #ffedeb;
+}
+
+.cruisara-section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+.cruisara-section-head__copy {
+  max-width: 405px;
+}
+
+.cruisara-eyebrow {
+  margin-bottom: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #a03a0f;
+}
+
+.cruisara-section-head h2,
+.cruisara-testimonial__head h2 {
+  margin: 0;
+  font-family: "Epilogue", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: #4e211e;
+}
+
+.cruisara-inline-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #a03a0f;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #4e211e;
+}
+
+.cruisara-inline-link:hover {
+  color: #a03a0f;
+}
+
+.cruisara-filter-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.cruisara-filter-summary p {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #834d48;
+}
+
+.cruisara-clear-filters {
+  display: none;
+  padding: 10px 18px;
+  border: 1px solid rgba(160, 58, 15, 0.2);
+  border-radius: 999px;
+  background: #fff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #a03a0f;
+}
+
+.cruisara-clear-filters.is-visible {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cruisara-tour-grid {
+  row-gap: 32px;
+}
+
+.cruisara-tour-card {
+  height: 100%;
+  overflow: hidden;
+  border-radius: 24px 0 12px 0;
+  background: #fff;
+  box-shadow:
+    0 20px 25px -5px rgba(78, 33, 30, 0.05),
+    0 8px 10px -6px rgba(78, 33, 30, 0.05);
+}
+
+.cruisara-tour-card--offset {
+  margin-top: 16px;
+}
+
+.cruisara-tour-card__media {
+  position: relative;
+  overflow: hidden;
+  height: 256px;
+}
+
+.cruisara-tour-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cruisara-tour-card__badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 1;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: #ffd709;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #5b4b00;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.cruisara-tour-card__badge--alt {
+  min-width: 82px;
+}
+
+.cruisara-tour-card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 196px;
+  padding: 24px;
+}
+
+.cruisara-tour-card__body h3 {
+  margin: 0;
+  font-family: "Abhaya Libre", serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #4e211e;
+}
+
+.cruisara-tour-card__rating {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #834d48;
+}
+
+.cruisara-stars {
+  display: inline-flex;
+  gap: 3px;
+  color: #7b6200;
+  font-size: 12px;
+}
+
+.cruisara-tour-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.cruisara-tour-card__meta strong {
+  font-family: "Epilogue", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  color: #a03a0f;
+}
+
+.cruisara-tour-card__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 102px;
+  min-height: 36px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: #a03a0f;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffefeb;
+}
+
+.cruisara-tour-card__cta:hover {
+  background: #7f2f0b;
+  color: #fff;
+}
+
+.cruisara-empty {
+  padding: 28px 32px;
+  margin-top: 24px;
+  border: 1px dashed rgba(160, 58, 15, 0.25);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+.cruisara-empty h3 {
+  margin: 0 0 8px;
+  font-family: "Epilogue", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #4e211e;
+}
+
+.cruisara-empty p {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 15px;
+  color: #834d48;
+}
+
+.cruisara-curation {
+  position: relative;
+  padding: 112px 0;
+  overflow: hidden;
+}
+
+.cruisara-curation::before {
+  content: "";
+  position: absolute;
+  inset: 12px 0 -80px;
+  background: #006668;
+  transform: skewY(2.4deg);
+  transform-origin: top left;
+}
+
+.cruisara-curation .cruisara-container {
+  position: relative;
+  z-index: 1;
+}
+
+.cruisara-curation__copy h2 {
+  margin: 0 0 32px;
+  font-family: "Epilogue", sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: #fff;
+}
+
+.cruisara-curation__copy h2 span {
+  display: block;
+}
+
+.cruisara-curation__copy p {
+  max-width: 512px;
+  margin-bottom: 40px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.625;
+  color: #5af8fb;
+}
+
+.cruisara-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.cruisara-feature-list__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.cruisara-feature-list__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: rgba(90, 248, 251, 0.14);
+  color: #5af8fb;
+  font-size: 22px;
+}
+
+.cruisara-feature-list__item h3 {
+  margin: 0 0 8px;
+  font-family: "Epilogue", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.cruisara-feature-list__item p {
+  margin: 0;
+  max-width: 464px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(90, 248, 251, 0.82);
+}
+
+.cruisara-curation__visual {
+  position: relative;
+  max-width: 603px;
+  margin-left: auto;
+}
+
+.cruisara-curation__frame {
+  padding: 16px;
+  border-radius: 24px 0 12px 0;
+  background: #fff;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transform: rotate(3deg);
+}
+
+.cruisara-curation__frame img {
+  width: 100%;
+  height: 500px;
+  border-radius: 18px 0 12px 0;
+  object-fit: cover;
+}
+
+.cruisara-curation__badge {
+  position: absolute;
+  bottom: -34px;
+  left: -44px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 192px;
+  height: 192px;
+  border: 8px solid #ffedeb;
+  border-radius: 50%;
+  background: #6c5a00;
+  transform: rotate(-12deg);
+}
+
+.cruisara-curation__badge strong {
+  font-family: "Epilogue", sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: #fff2cd;
+  line-height: 1;
+}
+
+.cruisara-curation__badge span {
+  margin-top: 6px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff2cd;
+}
+
+.cruisara-testimonial {
+  padding: 96px 0;
+  background: #fff4f3;
+}
+
+.cruisara-testimonial__head {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.cruisara-testimonial__card {
+  position: relative;
+  max-width: 896px;
+  margin: 0 auto;
+  padding: 48px;
+  border-radius: 24px 0 12px 0;
+  background: #fff;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.cruisara-testimonial__quote {
+  position: absolute;
+  top: -20px;
+  left: -18px;
+  font-family: "Epilogue", sans-serif;
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 1;
+  color: #f9b29b;
+}
+
+.cruisara-testimonial__card p {
+  margin-bottom: 32px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.625;
+  color: #4e211e;
+}
+
+.cruisara-testimonial__author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cruisara-testimonial__author img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cruisara-testimonial__author h3 {
+  margin: 0 0 4px;
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #4e211e;
+}
+
+.cruisara-testimonial__author span {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #834d48;
+}
+
+.cruisara-testimonial__dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 48px;
+}
+
+.cruisara-testimonial__dots span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ffdad6;
+}
+
+.cruisara-testimonial__dots span.is-active {
+  background: #a03a0f;
+}
+
+.cruisara-footer {
+  padding-top: 1px;
+  background: #f8fafc;
+  border-top: 1px solid rgba(224, 156, 149, 0.1);
+}
+
+.cruisara-footer__top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  gap: 32px;
+  padding: 64px 0;
+}
+
+.cruisara-footer__logo,
+.cruisara-footer__links h3,
+.cruisara-footer__newsletter h3 {
+  font-family: "Epilogue", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.cruisara-footer__logo {
+  display: inline-flex;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.cruisara-footer__brand p {
+  max-width: 320px;
+  margin-bottom: 24px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #475569;
+}
+
+.cruisara-footer__socials {
+  display: flex;
+  gap: 16px;
+}
+
+.cruisara-footer__socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: #94a3b8;
+  font-size: 18px;
+}
+
+.cruisara-footer__socials a:hover {
+  color: #a03a0f;
+}
+
+.cruisara-footer__links,
+.cruisara-footer__newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cruisara-footer__links a {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  color: #475569;
+}
+
+.cruisara-footer__links a:hover {
+  color: #a03a0f;
+}
+
+.cruisara-footer__newsletter form {
+  position: relative;
+}
+
+.cruisara-footer__newsletter input {
+  width: 100%;
+  height: 55px;
+  padding: 0 120px 0 24px;
+  border: 0;
+  border-radius: 999px;
+  background: #fff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.cruisara-footer__newsletter button {
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  height: 41px;
+  padding: 0 24px;
+  border: 0;
+  border-radius: 999px;
+  background: #a03a0f;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffefeb;
+}
+
+.cruisara-footer__newsletter button:hover {
+  background: #7f2f0b;
+}
+
+.cruisara-footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 33px 0 32px;
+  border-top: 1px solid rgba(224, 156, 149, 0.1);
+}
+
+.cruisara-footer__bottom p,
+.cruisara-footer__contact span {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  color: #475569;
+}
+
+.cruisara-footer__contact {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.cruisara-footer__contact span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cruisara-footer__contact i {
+  color: #64748b;
+}
+
+@media screen and (max-width: 1199px) {
+  .cruisara-hero__title {
+    font-size: 78px;
+  }
+
+  .cruisara-curation__copy h2 {
+    font-size: 60px;
+  }
+
+  .cruisara-curation__badge {
+    left: -12px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #site-header.cruisara-site-header {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .cruisara-homepage #mainnav-mobi {
+    padding: 12px 20px 24px;
+    background: #fff;
+    border-top: 1px solid rgba(224, 156, 149, 0.15);
+  }
+
+  .cruisara-homepage #mainnav-mobi .menu > li {
+    float: none;
+    margin: 0;
+  }
+
+  .cruisara-homepage #mainnav-mobi .menu > li > a {
+    padding: 10px 0;
+    font-family: "Epilogue", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cruisara-homepage #mainnav {
+    display: none;
+  }
+
+  .cruisara-homepage .header.downscrolled {
+    backdrop-filter: none;
+  }
+
+  .cruisara-hero {
+    min-height: 760px;
+  }
+
+  .cruisara-hero > .cruisara-container:first-of-type {
+    min-height: 520px;
+  }
+
+  .cruisara-hero__title {
+    font-size: 64px;
+  }
+
+  .cruisara-search {
+    grid-template-columns: 1fr;
+    gap: 0;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 32px;
+  }
+
+  .cruisara-search__field + .cruisara-search__field {
+    border-top: 1px solid rgba(224, 156, 149, 0.2);
+    border-left: 0;
+  }
+
+  .cruisara-search__button {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .cruisara-filters-section {
+    padding-top: 56px;
+  }
+
+  .cruisara-tour-card--offset {
+    margin-top: 0;
+  }
+
+  .cruisara-curation {
+    padding: 88px 0;
+  }
+
+  .cruisara-curation .row {
+    row-gap: 56px;
+  }
+
+  .cruisara-curation__copy h2 {
+    font-size: 54px;
+  }
+
+  .cruisara-curation__copy p {
+    max-width: 100%;
+  }
+
+  .cruisara-curation__visual {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  .cruisara-footer__top {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cruisara-footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cruisara-footer__contact {
+    flex-wrap: wrap;
+    gap: 16px 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #site-header.cruisara-site-header {
+    gap: 16px;
+  }
+
+  .cruisara-header-actions {
+    gap: 16px;
+  }
+
+  .cruisara-book-now {
+    min-width: auto;
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  .cruisara-hero {
+    min-height: 640px;
+  }
+
+  .cruisara-hero > .cruisara-container:first-of-type {
+    min-height: 420px;
+  }
+
+  .cruisara-hero > .cruisara-container:last-of-type {
+    bottom: 24px;
+  }
+
+  .cruisara-hero__title {
+    font-size: 48px;
+  }
+
+  .cruisara-filters {
+    gap: 24px;
+    justify-content: space-between;
+  }
+
+  .cruisara-filter-chip {
+    width: calc(50% - 12px);
+  }
+
+  .cruisara-section-head,
+  .cruisara-filter-summary {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cruisara-section-head h2,
+  .cruisara-testimonial__head h2 {
+    font-size: 38px;
+  }
+
+  .cruisara-tour-card__body h3 {
+    font-size: 28px;
+  }
+
+  .cruisara-curation__copy h2 {
+    font-size: 42px;
+  }
+
+  .cruisara-curation__copy p {
+    font-size: 18px;
+  }
+
+  .cruisara-feature-list__item {
+    gap: 16px;
+  }
+
+  .cruisara-curation__frame img {
+    height: 360px;
+  }
+
+  .cruisara-curation__badge {
+    width: 154px;
+    height: 154px;
+  }
+
+  .cruisara-testimonial {
+    padding: 72px 0;
+  }
+
+  .cruisara-testimonial__head {
+    margin-bottom: 56px;
+  }
+
+  .cruisara-testimonial__card {
+    padding: 32px 24px;
+  }
+
+  .cruisara-testimonial__card p {
+    font-size: 20px;
+  }
+
+  .cruisara-footer__top {
+    grid-template-columns: 1fr;
+    padding: 48px 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #site-header.cruisara-site-header {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .cruisara-logo a {
+    font-size: 21px;
+  }
+
+  .cruisara-search-icon {
+    display: none;
+  }
+
+  .cruisara-hero {
+    min-height: 600px;
+  }
+
+  .cruisara-hero__title {
+    font-size: 40px;
+  }
+
+  .cruisara-search {
+    border-radius: 24px;
+  }
+
+  .cruisara-search__field {
+    min-height: 52px;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .cruisara-search__button {
+    min-height: 52px;
+  }
+
+  .cruisara-filter-chip {
+    width: 100%;
+  }
+
+  .cruisara-section-head h2,
+  .cruisara-testimonial__head h2 {
+    font-size: 32px;
+  }
+
+  .cruisara-tour-card__body {
+    padding: 20px;
+  }
+
+  .cruisara-tour-card__meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cruisara-tour-card__cta {
+    width: 100%;
+  }
+
+  .cruisara-curation__copy h2 {
+    font-size: 34px;
+  }
+
+  .cruisara-curation__frame img {
+    height: 280px;
+  }
+
+  .cruisara-curation__badge {
+    left: 12px;
+    bottom: -28px;
+    width: 132px;
+    height: 132px;
+    border-width: 6px;
+  }
+
+  .cruisara-curation__badge strong {
+    font-size: 28px;
+  }
+
+  .cruisara-testimonial__quote {
+    top: -14px;
+    left: -10px;
+    font-size: 72px;
+  }
+
+  .cruisara-testimonial__card p {
+    font-size: 18px;
+  }
+
+  .cruisara-testimonial__author {
+    align-items: flex-start;
+  }
+
+  .cruisara-footer__newsletter input {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .cruisara-footer__newsletter button {
+    position: static;
+    width: 100%;
+    margin-top: 12px;
+  }
 }

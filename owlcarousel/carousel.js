@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(".owl-carousel")
-    .not(".team-carousel")
+    .not(".team-carousel, .what-we-do-slider")
     .each(function () {
       var margin = $(this).data("margin");
       var tablet = $(this).data("tablet");
