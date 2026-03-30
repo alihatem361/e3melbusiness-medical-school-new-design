@@ -307,7 +307,7 @@
             {
               width: percent + "%",
             },
-            $(this).find(".progress-animate").data("duration")
+            $(this).find(".progress-animate").data("duration"),
           );
 
         $(this)
@@ -318,7 +318,7 @@
             {
               width: percent + "%",
             },
-            $(this).find(".progress-animate").data("duration")
+            $(this).find(".progress-animate").data("duration"),
           );
       });
     });
@@ -565,8 +565,10 @@
                   class: "flat-alert " + cls,
                   text: result,
                 }).append(
-                  $('<a class="close" href="#"><i class="fa fa-close"></i></a>')
-                )
+                  $(
+                    '<a class="close" href="#"><i class="fa fa-close"></i></a>',
+                  ),
+                ),
               );
 
               $form.find(":input").not(".submit").val("");
@@ -634,40 +636,40 @@
                 messageDiv.html(
                   objUse.noticeError.replace(
                     "{msg}",
-                    "Error! <strong>Email is required.</strong>"
-                  )
+                    "Error! <strong>Email is required.</strong>",
+                  ),
                 );
                 break;
               case "email-err":
                 messageDiv.html(
                   objUse.noticeError.replace(
                     "{msg}",
-                    "Error! <strong>Email invalid.</strong>"
-                  )
+                    "Error! <strong>Email invalid.</strong>",
+                  ),
                 );
                 break;
               case "duplicate":
                 messageDiv.html(
                   objUse.noticeError.replace(
                     "{msg}",
-                    "Error! <strong>Email is duplicate.</strong>"
-                  )
+                    "Error! <strong>Email is duplicate.</strong>",
+                  ),
                 );
                 break;
               case "filewrite":
                 messageDiv.html(
                   objUse.noticeInfo.replace(
                     "{msg}",
-                    "Error! <strong>Mail list file is open.</strong>"
-                  )
+                    "Error! <strong>Mail list file is open.</strong>",
+                  ),
                 );
                 break;
               case "undefined":
                 messageDiv.html(
                   objUse.noticeInfo.replace(
                     "{msg}",
-                    "Error! <strong>undefined error.</strong>"
-                  )
+                    "Error! <strong>undefined error.</strong>",
+                  ),
                 );
                 break;
               case "api-error":
@@ -769,7 +771,7 @@
         {
           scrollTop: Math.max($featuredSection.offset().top - 120, 0),
         },
-        400
+        400,
       );
     };
 
@@ -780,7 +782,7 @@
         {
           scrollTop: Math.max($searchForm.offset().top - 140, 0),
         },
-        400
+        400,
       );
     };
 
