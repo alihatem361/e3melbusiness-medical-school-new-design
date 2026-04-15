@@ -7178,7 +7178,10 @@ small:lang(ar) {
   background: #ffedeb;
   color: #006668;
   font-size: 24px;
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .cruisara-filter-chip__label {
