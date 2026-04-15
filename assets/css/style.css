@@ -8513,13 +8513,15 @@ small:lang(ar) {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
 }
 
-.about-page-premium .about-overview-image {
+.about-page-premium .about-overview-image,
+.about-page-premium .about-lecturer-image img {
   transition: transform 0.3s ease-in-out;
   transform: scale(1);
 }
 
-.about-page-premium .about-overview-art:hover .about-overview-image {
-  transform: scale(1.04);
+.about-page-premium .about-overview-art:hover .about-overview-image,
+.about-page-premium .about-lecturer-card:hover .about-lecturer-image img {
+  transform: scale(1.03);
 }
 
 @media only screen and (max-width: 991px) {
