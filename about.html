@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,7 +20,7 @@
     <!--logo-->
     <link rel="icon" href="assets/image/logo-yotta.svg" sizes="32x32" />
   </head>
-  <body class="counter-scroll header_sticky">
+  <body class="counter-scroll header_sticky about-page-premium">
     <!-- Preloader -->
     <div id="loading-overlay">
       <div class="loader"></div>
@@ -43,31 +43,34 @@
               <div class="nav-wrap">
                 <nav id="mainnav" class="mainnav">
                   <ul class="menu">
-                    <li class="active">
+                    <li>
                       <a href="index.html" title="">Home</a>
                     </li>
                     <li class="menu-item-has-children">
-                      <a href="about-us.html" title="">Categories</a>
+                      <a href="categories.html" title="">Categories</a>
                       <ul class="sub-menu">
-                        <li><a href="about-us.html" title="">Category 1</a></li>
-                        <li><a href="doctor.html" title="">Category 2</a></li>
+                        <li><a href="categories.html" title="">All Categories</a></li>
+                        <li><a href="category-single.html" title="">Category Details</a></li>
                         <li>
-                          <a href="doctor-details.html" title="">Category 3</a>
+                          <a href="contact.html" title="">Support</a>
                         </li>
                       </ul>
                       <!-- /.sub-menu -->
                     </li>
                     <li>
-                      <a href="index.html" title="">Diplomas</a>
+                      <a href="diplomas.html" title="">Diplomas</a>
                     </li>
                     <li>
-                      <a href="index.html" title="">Courses</a>
+                      <a href="courses.html" title="">Courses</a>
                     </li>
                     <li>
-                      <a href="index.html" title="">Pricing</a>
+                      <a href="pricing.html" title="">Pricing</a>
                     </li>
                     <li>
-                      <a href="index.html" title="">Accreditation</a>
+                      <a href="accreditation.html" title="">Accreditation</a>
+                    </li>
+                    <li class="active">
+                      <a href="about.html" title="">About</a>
                     </li>
                   </ul>
                   <!-- /.menu -->
@@ -77,10 +80,10 @@
               <div class="contact">
                 <div class="top-bar-right">
                   <div class="button-header">
-                    <a href="#" class="bg-main-outline rounded-pill mr-2"
+                    <a href="login.html" class="bg-main-outline rounded-pill mr-2"
                       ><span>Login</span></a
                     >
-                    <a href="#" class="bg-main rounded-pill"
+                    <a href="register.html" class="bg-main rounded-pill"
                       ><span>Register</span></a
                     >
                   </div>
@@ -93,13 +96,17 @@
             </div>
           </div>
         </header>
-        <div id="header-banner">
+        <div id="header-banner" class="about-hero-banner">
           <div class="container">
-            <div class="text-banner wow fadeInDown">
-              <h1 class="baner-tittle">About Us</h1>
+            <div
+              class="text-banner about-hero-content wow fadeInDown"
+              data-wow-duration="1s"
+            >
+              <span class="about-hero-kicker">About the company</span>
+              <h1 class="baner-tittle">About Yotta Medical School</h1>
               <div class="baner-content">
-                <a href="index.html" class="font-raguler">Home </a
-                ><span> <span class="mx-2">|</span> About Us</span>
+                <a href="index.html" class="font-raguler">Home</a>
+                <span> <span class="mx-2">|</span> About Us</span>
               </div>
             </div>
           </div>
@@ -110,431 +117,371 @@
             <div id="site-content" class="site-content clearfix">
               <div id="inner-content" class="inner-content-wrap">
                 <div class="page-content">
-                  <section class="about-us">
+                  <section class="about-premium-section about-overview-section">
                     <div class="container">
-                      <div class="row">
-                        <div
-                          class="themesflat-spacer clearfix"
-                          data-desktop="168"
-                          data-mobile="70"
-                          data-smobile="70"
-                        ></div>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-6 col-md-12 col-sm-12">
-                          <div class="feature-medal wow fadeInUp">
+                      <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-12">
+                          <div
+                            class="about-overview-copy wow fadeInUp"
+                            data-wow-duration="1s"
+                          >
+                            <h3 class="heading">Who We Are</h3>
+                            <h2 class="about-overview-title text-color-title-sidebar">
+                              The first educational platform in the Arab world
+                              specialized in medical sciences
+                            </h2>
+                            <p>
+                              Yotta Medical School launched in 2019 to provide
+                              practical, high-impact learning for graduates and
+                              professionals in medicine, pharmacy, dentistry,
+                              veterinary medicine, physiotherapy, and nursing.
+                            </p>
+                            <p>
+                              Our programs are delivered by experienced doctors,
+                              pharmacists, scientists, and field experts who
+                              transform complex knowledge into clear,
+                              career-ready skills.
+                            </p>
+                            <p>
+                              We are committed to helping learners bridge the
+                              gap between university education and real market
+                              needs through flexible, professional courses that
+                              can be attended anywhere and at any time.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                          <div
+                            class="about-overview-art wow fadeInUp"
+                            data-wow-duration="1s"
+                            data-wow-delay="0.15s"
+                          >
+                            <div class="about-overview-pattern"></div>
                             <img
                               src="assets/image/common/about-us.jpg"
-                              alt="image"
+                              alt="Yotta learning community"
+                              class="about-overview-image"
                             />
-                            <div class="medal">
-                              <div class="box-icon">
-                                <i class="icon-medal"></i>
-                              </div>
-                              <div class="content-medal">
-                                <div
-                                  class="themesflat-spacer clearfix"
-                                  data-desktop="35"
-                                  data-mobile="35"
-                                  data-smobile="35"
-                                ></div>
-                                <h2 class="title-ab text-color-title-sidebar">
-                                  EBU Accreditation
-                                </h2>
-                                <div
-                                  class="themesflat-spacer clearfix"
-                                  data-desktop="10"
-                                  data-mobile="10"
-                                  data-smobile="10"
-                                ></div>
+                            <div class="about-overview-badge">
+                              <span class="about-overview-badge-icon">
+                                <i class="fas fa-award"></i>
+                              </span>
+                              <div>
+                                <h4>EBU Accredited</h4>
                                 <p>
-                                  Located at the heart of Delaware, United
-                                  States of America.
+                                  Trusted learning standards with real
+                                  professional value.
                                 </p>
                               </div>
                             </div>
-                            <div class="feature-medal-inner">
-                              <img
-                                src="assets/image/pattern/Group7027.jpg"
-                                alt="image"
-                              />
-                            </div>
                           </div>
                         </div>
+                      </div>
+                    </div>
+                  </section>
+                  <!--/about-overview-->
 
-                        <div class="col-lg-6 col-md-12 col-sm-12">
-                          <div class="box-wrap-ab wow fadeInUp">
-                            <div
-                              class="themesflat-spacer clearfix"
-                              data-desktop="20"
-                              data-mobile="50"
-                              data-smobile="50"
-                            ></div>
-                            <h3 class="heading">WHO WE ARE</h3>
-                            <div class="title-heading">
-                              The first Educational platform in the Arab world
+                  <section class="about-premium-section about-purpose-section">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <h3 class="heading">Vision & Mission</h3>
+                          <div class="title-heading text-color-title-sidebar">
+                            Built to shape confident professionals for the
+                            future of healthcare
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-5">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                          <div
+                            class="about-purpose-card wow fadeInUp"
+                            data-wow-duration="1s"
+                          >
+                            <div class="about-purpose-icon">
+                              <i class="fas fa-eye"></i>
                             </div>
+                            <h4>Our Vision</h4>
                             <p>
-                              Yotta medical school is the first educational
-                              platform in the Arab world specialized in medical
-                              field, started in beginning of 2019, to provide
-                              courses for graduates and employees in various
-                              medical and scientific fields, such as human
-                              medicine, pharmaceutics, dentistry, veterinary
-                              medicine, physiotherapy, and nursing by a
-                              selection of the best experienced Doctors,
-                              pharmacists, scientists, and veterinarians.
+                              To become the most trusted medical education
+                              destination in the Arab world by delivering
+                              modern, high-quality learning experiences that
+                              elevate careers and healthcare outcomes.
                             </p>
-                            <p class="text-main mt-3">
-                              We aspire to be your first choice for learning by
-                              offering training courses covering all the most
-                              scientific and medical specialties.
-                            </p>
-                            <p class="mt-3">
-                              Our mission is to try to fill the gap between what
-                              you have studied in the university and the ‎needs
-                              of Local & global labor market, and help you to
-                              develop yourself and acquire the knowledge and
-                              practical skills that necessary to excel in your
-                              career and get suitable jobs. By offering you
-                              professional educational courses, you can attend
-                              it wherever and whenever you want. These courses
-                              cover a large number of medical and scientific
-                              specialties that you can work in after graduation,
-                              in addition to providing courses aimed to
-                              developing the performance of workers in medical,
-                              pharmaceutical companies, and hospitals and
-                              providing them with the latest skills and
-                              experiences required and helping them to acquire
-                              new skills to start a different specialty by a
-                              group of best specialists in those fields.
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div
+                            class="about-purpose-card wow fadeInUp"
+                            data-wow-duration="1s"
+                            data-wow-delay="0.15s"
+                          >
+                            <div class="about-purpose-icon">
+                              <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h4>Our Mission</h4>
+                            <p>
+                              To bridge the gap between academic knowledge and
+                              labor market needs through applied courses, expert
+                              mentorship, and practical skill-building for
+                              students and working professionals.
                             </p>
                           </div>
                         </div>
                       </div>
                     </div>
                   </section>
-                  <!--/about-us-->
-                  <section class="fl-row our-team mt-100">
+                  <!--/about-purpose-->
+
+                  <section
+                    class="about-premium-section about-lecturers-section pb-100"
+                  >
                     <div class="container">
-                      <div class="row">
-                        <div class="col-lg-6 col-sm-12">
-                          <div class="box-heading-ot wow fadeInDown">
+                      <div class="row align-items-end">
+                        <div class="col-lg-8 col-md-12">
+                          <div class="box-heading-ot wow fadeInDown mb-0">
                             <h3 class="heading text-color-title-sidebar">
-                              MEET OUR TEAM
+                              OUR LECTURERS
                             </h3>
                             <div class="title-heading text-color-title-sidebar">
-                              Yotta Academy Team
+                              Learn from experienced doctors and industry
+                              specialists
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="owl-carousel owl-theme team-carousel">
-                          <div
-                            class="item team-item box-item-carousel wow fadeInUp"
-                            data-wow-delay="100ms"
-                          >
-                            <img
-                              src="assets/image/team/team1.jpg"
-                              alt="image"
-                            />
-                            <div class="info">
-                              <h2 class="name text-color-title-sidebar">
-                                <a href="doctor-details.html"
-                                  >Dr. Ahmed Yasser Soliman</a
-                                >
-                              </h2>
-                              <p class="fs-sm title pdt-8">
-                                The Dean Of Yotta Medical School
-                              </p>
-                            </div>
-                            <div class="social-doctor">
-                              <span class="grid-item">
-                                <a href="#">
-                                  <i class="fab fa-facebook-f"></i>
-                                </a>
-                              </span>
-                              <span class="grid-item">
-                                <a href="#"> <i class="fab fa-twitter"></i> </a>
-                              </span>
-                              <span class="grid-item">
-                                <a href="#">
-                                  <i class="fab fa-google-plus-g"></i>
-                                </a>
-                              </span>
-                              <span class="grid-item">
-                                <a href="#">
-                                  <i class="fab fa-instagram"></i>
-                                </a>
-                              </span>
-                            </div>
-                            <div
-                              class="themesflat-spacer clearfix"
-                              data-desktop="30"
-                              data-mobile="20"
-                              data-smobile="10"
-                            ></div>
-                          </div>
-                          <div
-                            class="item team-item box-item-carousel wow fadeInUp"
-                            data-wow-delay="100ms"
-                          >
-                            <img
-                              src="assets/image/team/team2.jpg"
-                              alt="image"
-                            />
-                            <div class="info">
-                              <h2 class="name text-color-title-sidebar">
-                                <a href="doctor-details.html"
-                                  >Dr. Mostafa Nawareg</a
-                                >
-                              </h2>
-                              <p class="fs-sm title pdt-8"></p>
-                            </div>
-                            <div class="social-doctor">
-                              <span class="grid-item">
-                                <a href="#">
-                                  <i class="fab fa-facebook-f"></i>
-                                </a>
-                              </span>
-                              <span class="grid-item">
-                                <a href="#"> <i class="fab fa-twitter"></i> </a>
-                              </span>
-                              <span class="grid-item">
-                                <a href="#">
-                                  <i class="fab fa-google-plus-g"></i>
-                                </a>
-                              </span>
-                              <span class="grid-item">
-                                <a href="#">
-                                  <i class="fab fa-instagram"></i>
-                                </a>
-                              </span>
-                            </div>
-                            <div
-                              class="themesflat-spacer clearfix"
-                              data-desktop="30"
-                              data-mobile="20"
-                              data-smobile="10"
-                            ></div>
-                          </div>
-                          <div
-                            class="item team-item box-item-carousel wow fadeInUp"
-                            data-wow-delay="100ms"
-                          >
-                            <img
-                              src="assets/image/team/team3.jpg"
-                              alt="image"
-                            />
-                            <div class="info">
-                              <h2 class="name text-color-title-sidebar">
-                                <a href="doctor-details.html"
-                                  >Dr. Mostafa Nawareg</a
-                                >
-                              </h2>
-                              <p class="fs-sm title pdt-8"></p>
-                            </div>
-                            <div class="social-doctor">
-                              <span class="grid-item">
-                                <a href="#">
-                                  <i class="fab fa-facebook-f"></i>
-                                </a>
-                              </span>
-                              <span class="grid-item">
-                                <a href="#"> <i class="fab fa-twitter"></i> </a>
-                              </span>
-                              <span class="grid-item">
-                                <a href="#">
-                                  <i class="fab fa-google-plus-g"></i>
-                                </a>
-                              </span>
-                              <span class="grid-item">
-                                <a href="#">
-                                  <i class="fab fa-instagram"></i>
-                                </a>
-                              </span>
-                            </div>
-                            <div
-                              class="themesflat-spacer clearfix"
-                              data-desktop="30"
-                              data-mobile="20"
-                              data-smobile="10"
-                            ></div>
-                          </div>
-                          <div
-                            class="item team-item box-item-carousel wow fadeInUp"
-                            data-wow-delay="100ms"
-                          >
-                            <img
-                              src="assets/image/team/team4.jpg"
-                              alt="image"
-                            />
-                            <div class="info">
-                              <h2 class="name text-color-title-sidebar">
-                                <a href="doctor-details.html"
-                                  >Dr. Mostafa Nawareg</a
-                                >
-                              </h2>
-                              <p class="fs-sm title pdt-8"></p>
-                            </div>
-                            <div class="social-doctor">
-                              <span class="grid-item">
-                                <a href="#">
-                                  <i class="fab fa-facebook-f"></i>
-                                </a>
-                              </span>
-                              <span class="grid-item">
-                                <a href="#"> <i class="fab fa-twitter"></i> </a>
-                              </span>
-                              <span class="grid-item">
-                                <a href="#">
-                                  <i class="fab fa-google-plus-g"></i>
-                                </a>
-                              </span>
-                              <span class="grid-item">
-                                <a href="#">
-                                  <i class="fab fa-instagram"></i>
-                                </a>
-                              </span>
-                            </div>
-                            <div
-                              class="themesflat-spacer clearfix"
-                              data-desktop="30"
-                              data-mobile="20"
-                              data-smobile="10"
-                            ></div>
-                          </div>
+                        <div class="col-lg-4 col-md-12">
+                          <div id="about-team-nav" class="about-team-nav"></div>
                         </div>
-                        <!--/owl-carousel-->
                       </div>
-                    </div>
-                  </section>
-                  <!--/our-professional-->
-                  <section class="testimonial pb-100 mt-100">
-                    <div class="container">
                       <div class="row">
                         <div class="col-12">
-                          <div class="box-testimonial">
-                            <div class="box-img-tt">
-                              <img
-                                src="assets/image/patternphoto/World-Map-Free-PNG-Image.png"
-                                alt="image"
-                              />
+                          <div
+                            class="owl-carousel owl-theme team-carousel about-team-carousel mt-4"
+                            data-margin="20"
+                            data-mobile="1"
+                            data-tablet="2"
+                            data-desktop="4"
+                            data-nav="true"
+                            data-dots="false"
+                            data-nav-container="#about-team-nav"
+                            data-rtl="false"
+                          >
+                            <div
+                              class="item about-lecturer-item wow fadeInUp"
+                              data-wow-delay="100ms"
+                            >
+                              <article class="about-lecturer-card">
+                                <div class="about-lecturer-image">
+                                  <img
+                                    src="assets/image/team/team1.jpg"
+                                    alt="Dr. Ahmed Yasser Soliman"
+                                  />
+                                </div>
+                                <div class="about-lecturer-info">
+                                  <h4>
+                                    <a href="doctor-details.html"
+                                      >Dr. Ahmed Yasser Soliman</a
+                                    >
+                                  </h4>
+                                  <p>The Dean of Yotta Medical School</p>
+                                  <div class="about-lecturer-social">
+                                    <a href="#" aria-label="Facebook"
+                                      ><i class="fab fa-facebook-f"></i
+                                    ></a>
+                                    <a href="#" aria-label="Twitter"
+                                      ><i class="fab fa-twitter"></i
+                                    ></a>
+                                    <a href="#" aria-label="LinkedIn"
+                                      ><i class="fab fa-linkedin-in"></i
+                                    ></a>
+                                    <a href="#" aria-label="Instagram"
+                                      ><i class="fab fa-instagram"></i
+                                    ></a>
+                                  </div>
+                                </div>
+                              </article>
                             </div>
                             <div
-                              class="box-wrap-tt text-center pdt-39 wow fadeInUp"
+                              class="item about-lecturer-item wow fadeInUp"
+                              data-wow-delay="150ms"
                             >
-                              <h3 class="heading">CLIENT TESTIMONIALS</h3>
-                              <div class="title-heading wow fadeInUp pdt-8">
-                                What our clients say
-                              </div>
-                              <div
-                                class="themesflat-spacer clearfix"
-                                data-desktop="22"
-                                data-mobile="0"
-                                data-smobile="0"
-                              ></div>
+                              <article class="about-lecturer-card">
+                                <div class="about-lecturer-image">
+                                  <img
+                                    src="assets/image/team/team2.jpg"
+                                    alt="Dr. Mostafa Nawareg"
+                                  />
+                                </div>
+                                <div class="about-lecturer-info">
+                                  <h4>
+                                    <a href="doctor-details.html"
+                                      >Dr. Mostafa Nawareg</a
+                                    >
+                                  </h4>
+                                  <p>Clinical Training Specialist</p>
+                                  <div class="about-lecturer-social">
+                                    <a href="#" aria-label="Facebook"
+                                      ><i class="fab fa-facebook-f"></i
+                                    ></a>
+                                    <a href="#" aria-label="Twitter"
+                                      ><i class="fab fa-twitter"></i
+                                    ></a>
+                                    <a href="#" aria-label="LinkedIn"
+                                      ><i class="fab fa-linkedin-in"></i
+                                    ></a>
+                                    <a href="#" aria-label="Instagram"
+                                      ><i class="fab fa-instagram"></i
+                                    ></a>
+                                  </div>
+                                </div>
+                              </article>
                             </div>
                             <div
-                              class="owl-carousel owl-theme none cursor-resize wow fadeInUp mt-5"
-                              data-margin="30"
-                              data-tablet="2"
-                              data-mobile="1"
+                              class="item about-lecturer-item wow fadeInUp"
+                              data-wow-delay="200ms"
                             >
-                              <div
-                                class="item box-item-carousel wow fadeInUp h-350"
-                                data-wow-delay="100ms"
-                              >
-                                <blockquote class="text-center p-lg-5 p-4">
-                                  Lorem ipsum, dolor sit amet consectetur
-                                  adipisicing elit. Ut veniam explicabo nisi
-                                  ullam optio perspiciatis blanditiis. Nisi
-                                  voluptatibus sed adipisci accusamus! Explicabo
-                                  fugiat rerum voluptates iste ab magnam
-                                  repudiandae praesentium.
-                                </blockquote>
-                                <div class="info">
-                                  <h2 class="name text-color-title-sidebar">
-                                    <a href="doctor-details.html"
-                                      >Doris Jordan</a
-                                    >
-                                  </h2>
-                                  <p class="pdt-8">Design Expert</p>
+                              <article class="about-lecturer-card">
+                                <div class="about-lecturer-image">
+                                  <img
+                                    src="assets/image/team/team3.jpg"
+                                    alt="Dr. Sara Hossam"
+                                  />
                                 </div>
-                                <div
-                                  class="themesflat-spacer clearfix"
-                                  data-desktop="30"
-                                  data-mobile="20"
-                                  data-smobile="10"
-                                ></div>
-                              </div>
-                              <!--/item-tt-->
-
-                              <div
-                                class="item box-item-carousel wow fadeInUp h-350"
-                                data-wow-delay="100ms"
-                              >
-                                <blockquote class="text-center p-lg-5 p-4">
-                                  Lorem ipsum, dolor sit amet consectetur
-                                  adipisicing elit. Ut veniam explicabo nisi
-                                  ullam optio perspiciatis blanditiis. Nisi
-                                  voluptatibus sed adipisci accusamus! Explicabo
-                                  fugiat rerum voluptates iste ab magnam
-                                  repudiandae praesentium.
-                                </blockquote>
-                                <div class="info">
-                                  <h2 class="name text-color-title-sidebar">
+                                <div class="about-lecturer-info">
+                                  <h4>
                                     <a href="doctor-details.html"
-                                      >Doris Jordan</a
+                                      >Dr. Sara Hossam</a
                                     >
-                                  </h2>
-                                  <p class="pdt-8">Design Expert</p>
+                                  </h4>
+                                  <p>Medical Content Development Lead</p>
+                                  <div class="about-lecturer-social">
+                                    <a href="#" aria-label="Facebook"
+                                      ><i class="fab fa-facebook-f"></i
+                                    ></a>
+                                    <a href="#" aria-label="Twitter"
+                                      ><i class="fab fa-twitter"></i
+                                    ></a>
+                                    <a href="#" aria-label="LinkedIn"
+                                      ><i class="fab fa-linkedin-in"></i
+                                    ></a>
+                                    <a href="#" aria-label="Instagram"
+                                      ><i class="fab fa-instagram"></i
+                                    ></a>
+                                  </div>
                                 </div>
-                                <div
-                                  class="themesflat-spacer clearfix"
-                                  data-desktop="30"
-                                  data-mobile="20"
-                                  data-smobile="10"
-                                ></div>
-                              </div>
-                              <!--/item-tt-->
-
-                              <div
-                                class="item box-item-carousel wow fadeInUp h-350"
-                                data-wow-delay="100ms"
-                              >
-                                <blockquote class="text-center p-lg-5 p-4">
-                                  Lorem ipsum, dolor sit amet consectetur
-                                  adipisicing elit. Ut veniam explicabo nisi
-                                  ullam optio perspiciatis blanditiis. Nisi
-                                  voluptatibus sed adipisci accusamus! Explicabo
-                                  fugiat rerum voluptates iste ab magnam
-                                  repudiandae praesentium.
-                                </blockquote>
-                                <div class="info">
-                                  <h2 class="name text-color-title-sidebar">
+                              </article>
+                            </div>
+                            <div
+                              class="item about-lecturer-item wow fadeInUp"
+                              data-wow-delay="250ms"
+                            >
+                              <article class="about-lecturer-card">
+                                <div class="about-lecturer-image">
+                                  <img
+                                    src="assets/image/team/team4.jpg"
+                                    alt="Dr. Mohamed Adel"
+                                  />
+                                </div>
+                                <div class="about-lecturer-info">
+                                  <h4>
                                     <a href="doctor-details.html"
-                                      >Doris Jordan</a
+                                      >Dr. Mohamed Adel</a
                                     >
-                                  </h2>
-                                  <p class="pdt-8">Design Expert</p>
+                                  </h4>
+                                  <p>Healthcare Quality Consultant</p>
+                                  <div class="about-lecturer-social">
+                                    <a href="#" aria-label="Facebook"
+                                      ><i class="fab fa-facebook-f"></i
+                                    ></a>
+                                    <a href="#" aria-label="Twitter"
+                                      ><i class="fab fa-twitter"></i
+                                    ></a>
+                                    <a href="#" aria-label="LinkedIn"
+                                      ><i class="fab fa-linkedin-in"></i
+                                    ></a>
+                                    <a href="#" aria-label="Instagram"
+                                      ><i class="fab fa-instagram"></i
+                                    ></a>
+                                  </div>
                                 </div>
-                                <div
-                                  class="themesflat-spacer clearfix"
-                                  data-desktop="30"
-                                  data-mobile="20"
-                                  data-smobile="10"
-                                ></div>
-                              </div>
-                              <!--/item-tt-->
+                              </article>
+                            </div>
+                            <div
+                              class="item about-lecturer-item wow fadeInUp"
+                              data-wow-delay="300ms"
+                            >
+                              <article class="about-lecturer-card">
+                                <div class="about-lecturer-image">
+                                  <img
+                                    src="assets/image/team/team1.jpg"
+                                    alt="Dr. Rana Sami"
+                                  />
+                                </div>
+                                <div class="about-lecturer-info">
+                                  <h4>
+                                    <a href="doctor-details.html"
+                                      >Dr. Rana Sami</a
+                                    >
+                                  </h4>
+                                  <p>Pharmacology and Therapeutics Instructor</p>
+                                  <div class="about-lecturer-social">
+                                    <a href="#" aria-label="Facebook"
+                                      ><i class="fab fa-facebook-f"></i
+                                    ></a>
+                                    <a href="#" aria-label="Twitter"
+                                      ><i class="fab fa-twitter"></i
+                                    ></a>
+                                    <a href="#" aria-label="LinkedIn"
+                                      ><i class="fab fa-linkedin-in"></i
+                                    ></a>
+                                    <a href="#" aria-label="Instagram"
+                                      ><i class="fab fa-instagram"></i
+                                    ></a>
+                                  </div>
+                                </div>
+                              </article>
+                            </div>
+                            <div
+                              class="item about-lecturer-item wow fadeInUp"
+                              data-wow-delay="350ms"
+                            >
+                              <article class="about-lecturer-card">
+                                <div class="about-lecturer-image">
+                                  <img
+                                    src="assets/image/team/team2.jpg"
+                                    alt="Dr. Omar Khaled"
+                                  />
+                                </div>
+                                <div class="about-lecturer-info">
+                                  <h4>
+                                    <a href="doctor-details.html"
+                                      >Dr. Omar Khaled</a
+                                    >
+                                  </h4>
+                                  <p>Public Health and Research Mentor</p>
+                                  <div class="about-lecturer-social">
+                                    <a href="#" aria-label="Facebook"
+                                      ><i class="fab fa-facebook-f"></i
+                                    ></a>
+                                    <a href="#" aria-label="Twitter"
+                                      ><i class="fab fa-twitter"></i
+                                    ></a>
+                                    <a href="#" aria-label="LinkedIn"
+                                      ><i class="fab fa-linkedin-in"></i
+                                    ></a>
+                                    <a href="#" aria-label="Instagram"
+                                      ><i class="fab fa-instagram"></i
+                                    ></a>
+                                  </div>
+                                </div>
+                              </article>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </section>
-                  <!--/testimonial-->
+                  <!--/about-lecturers-->
                 </div>
                 <!--.page-content-->
               </div>
@@ -586,23 +533,23 @@
                     </div>
                     <ul class="one-half first">
                       <li>
-                        <a href="about-us.html" title=""
+                        <a href="diplomas.html" title=""
                           ><span><i class="fa fa-square"></i></span>Diplomas</a
                         >
                       </li>
                       <li>
-                        <a href="doctor.html" title=""
+                        <a href="courses.html" title=""
                           ><span><i class="fa fa-square"></i></span>Courses</a
                         >
                       </li>
                       <li>
-                        <a href="about-us.html" title=""
+                        <a href="categories.html" title=""
                           ><span><i class="fa fa-square"></i></span
                           >Categories</a
                         >
                       </li>
                       <li>
-                        <a href="services.html" title=""
+                        <a href="pricing.html" title=""
                           ><span><i class="fa fa-square"></i></span>Pricing</a
                         >
                       </li>
@@ -617,23 +564,23 @@
                     </div>
                     <ul class="one-half first">
                       <li>
-                        <a href="about-us.html" title=""
+                        <a href="index.html" title=""
                           ><span><i class="fa fa-square"></i></span>Home</a
                         >
                       </li>
                       <li>
-                        <a href="about-us.html" title=""
+                        <a href="about.html" title=""
                           ><span><i class="fa fa-square"></i></span>About us</a
                         >
                       </li>
                       <li>
-                        <a href="doctor.html" title=""
+                        <a href="contact.html" title=""
                           ><span><i class="fa fa-square"></i></span>Contact
                           Us</a
                         >
                       </li>
                       <li>
-                        <a href="about-us.html" title=""
+                        <a href="accreditation.html" title=""
                           ><span><i class="fa fa-square"></i></span
                           >Accreditation</a
                         >
@@ -649,12 +596,12 @@
                     </div>
                     <ul class="one-half first">
                       <li>
-                        <a href="#" title=""
+                        <a href="login.html" title=""
                           ><span><i class="fa fa-square"></i></span>Login</a
                         >
                       </li>
                       <li>
-                        <a href="#" title=""
+                        <a href="register.html" title=""
                           ><span><i class="fa fa-square"></i></span>Register</a
                         >
                       </li>
@@ -679,7 +626,7 @@
             <div class="container">
               <div class="row">
                 <div class="logo-bottom">
-                  <a href="">
+                  <a href="index.html">
                     <img
                       src="assets/image/logo-yotta.svg"
                       alt="Yotta Medical School"
@@ -695,18 +642,26 @@
                     <a
                       href="https://www.facebook.com/YottaSchool/?modal=admin_todo_tour"
                       target="_blank"
+                      rel="noopener"
+                      title="Yotta Facebook"
                       ><i class="fab fa-facebook-f"></i
                     ></a>
                   </li>
                   <li class="bottom-icon-style">
-                    <a href="https://twitter.com/YottaSchool" target="_blank"
+                    <a
+                      href="https://twitter.com/YottaSchool"
+                      target="_blank"
+                      rel="noopener"
+                      title="Yotta X"
                       ><i class="fab fa-twitter"></i
                     ></a>
                   </li>
                   <li class="bottom-icon-style">
                     <a
                       href="https://www.instagram.com/yottaschool/"
-                      ttarget="_blank"
+                      target="_blank"
+                      rel="noopener"
+                      title="Yotta Instagram"
                       ><i class="fab fa-instagram"></i
                     ></a>
                   </li>
@@ -714,6 +669,8 @@
                     <a
                       href="https://www.linkedin.com/company/yottamedicalschool/"
                       target="_blank"
+                      rel="noopener"
+                      title="Yotta LinkedIn"
                       ><i class="fab fa-linkedin-in"></i
                     ></a>
                   </li>
@@ -724,7 +681,7 @@
           <!--/.footer-bottom-->
         </footer>
         <div class="button-go-top">
-          <a href="#" title="" class="go-top">
+          <a href="#" title="Back to top" class="go-top">
             <i class="fa fa-chevron-up"></i>
           </a>
         </div>
