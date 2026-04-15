@@ -8377,12 +8377,30 @@ small:lang(ar) {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  padding: 0 !important;
+  line-height: 1 !important;
+  overflow: hidden !important;
+  min-height: 0;
   box-shadow: 0 8px 20px rgba(16, 53, 82, 0.08);
   transition:
     background 0.25s ease,
     color 0.25s ease,
     border-color 0.25s ease,
     transform 0.25s ease;
+}
+
+.about-page-premium .about-team-nav button i,
+.about-page-premium .about-team-nav button span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-page-premium .button-header a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden !important;
 }
 
 .about-page-premium .about-team-nav button:hover {
@@ -8481,6 +8499,27 @@ small:lang(ar) {
   background: var(--primary-color);
   color: #ffffff;
   transform: translateY(-2px);
+}
+
+/* About page premium motion refinements */
+.about-page-premium .about-purpose-card,
+.about-page-premium .about-lecturer-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.about-page-premium .about-purpose-card:hover,
+.about-page-premium .about-lecturer-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.about-page-premium .about-overview-image {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1);
+}
+
+.about-page-premium .about-overview-art:hover .about-overview-image {
+  transform: scale(1.04);
 }
 
 @media only screen and (max-width: 991px) {
