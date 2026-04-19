@@ -534,6 +534,41 @@
     }); // accordion
   };
 
+  var aboutOverviewReveal = function () {
+    var $sections = $(".about-overview-section");
+
+    if (!$sections.length) {
+      return;
+    }
+
+    if (!("IntersectionObserver" in window)) {
+      $sections.each(function () {
+        this.classList.add("is-visible");
+      });
+      return;
+    }
+
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+          } else {
+            entry.target.classList.remove("is-visible");
+          }
+        });
+      },
+      {
+        threshold: 0.35,
+        rootMargin: "0px 0px -8% 0px",
+      },
+    );
+
+    $sections.each(function () {
+      observer.observe(this);
+    });
+  };
+
   var ajaxContactForm = function () {
     $("#contactform").each(function () {
       $(this).validate({
@@ -922,6 +957,7 @@
     flatTabs();
     flatIsotopeCase();
     flatAccordion();
+    aboutOverviewReveal();
     CruisaraHomepage();
     removePreloader();
   });
