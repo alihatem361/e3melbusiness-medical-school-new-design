@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yotta Medical School | الماجستير المهني في إدارة الرعاية الصحية</title>
+    <link rel="stylesheet" href="assets/css/color/color-1.css" />
+    <link rel="stylesheet" href="assets/css/style.css?v=1.0.0.1" />
+    <link rel="stylesheet" href="revolution/css/layers.css" />
+    <link rel="stylesheet" href="revolution/css/settings.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css?v=1.0.0.1" />
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/animation/animate.css" />
+    <link rel="icon" href="assets/image/logo-yotta.svg" sizes="32x32" />
+    <style>
+        body.healthcare-mba-page {
+            background: #f6fafc;
+            color: #17313c;
+        }
+
+        .healthcare-mba-page .page-section {
+            padding: 5rem 0;
+        }
+
+        .healthcare-mba-page .section-heading {
+            margin-bottom: 2.25rem;
+        }
+
+        .healthcare-mba-page .section-heading .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            color: #0f6d7a;
+            font-weight: 700;
+            margin-bottom: .8rem;
+        }
+
+        .healthcare-mba-page .section-heading h2 {
+            font-size: clamp(1.7rem, 3vw, 2.8rem);
+            font-weight: 800;
+            margin-bottom: .85rem;
+            color: #17313c;
+        }
+
+        .healthcare-mba-page .section-heading p {
+            color: #5c7580;
+            line-height: 1.95;
+            max-width: 58rem;
+            margin-bottom: 0;
+        }
+
+        .hero-mba {
+            position: relative;
+            min-height: 88vh;
+            display: flex;
+            align-items: center;
+            background: url('assets/image/slides/slider1.jpg') center/cover no-repeat;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .hero-mba::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(9, 27, 39, .86), rgba(9, 104, 124, .72));
+        }
+
+        .hero-mba::after {
+            content: "";
+            position: absolute;
+            left: -6rem;
+            bottom: -10rem;
+            width: 24rem;
+            height: 24rem;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 255, 255, .18), rgba(255, 255, 255, 0) 68%);
+            pointer-events: none;
+        }
+
+        .hero-mba .hero-inner {
+            position: relative;
+            z-index: 1;
+            padding: 6rem 0 9rem;
+        }
+
+        .hero-mba .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: .6rem;
+            padding: .7rem 1.1rem;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, .18);
+            background: rgba(255, 255, 255, .12);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            margin-bottom: 1.35rem;
+            font-weight: 700;
+            letter-spacing: .01em;
+        }
+
+        .hero-mba .hero-title {
+            font-size: clamp(2.2rem, 5vw, 4.8rem);
+            line-height: 1.18;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .hero-mba .hero-sub {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255, .85);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-mba .hero-lead {
+            font-size: 1.08rem;
+            line-height: 2;
+            max-width: 42rem;
+            color: rgba(255, 255, 255, .92);
+            margin-bottom: 0;
+        }
+
+        .hero-mba .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: .9rem;
+            margin-top: 2rem;
+        }
+
+        .hero-mba .hero-actions a {
+            min-width: 190px;
+            padding: .95rem 1.35rem;
+            border-radius: 999px;
+            font-weight: 800;
+            box-shadow: 0 16px 35px rgba(0, 0, 0, .16);
+            transition: transform .25s ease, box-shadow .25s ease, opacity .25s ease;
+            text-align: center;
+        }
+
+        .hero-mba .hero-actions a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 22px 42px rgba(0, 0, 0, .2);
+        }
+
+        .hero-mba .hero-actions .btn-primary {
+            background: linear-gradient(135deg, #23a0b8, #0e5d71);
+            border: 0;
+        }
+
+        .hero-mba .hero-actions .btn-outline-light {
+            border-color: rgba(255, 255, 255, .55);
+            background: rgba(255, 255, 255, .06);
+            color: #fff;
+        }
+
+        .floating-card-wrap {
+            position: relative;
+            z-index: 3;
+            margin-top: -4.5rem;
+        }
+
+        .floating-card {
+            background: #fff;
+            border: 1px solid rgba(14, 93, 113, .08);
+            border-radius: 1.6rem;
+            padding: 1.6rem;
+            box-shadow: 0 22px 52px rgba(12, 32, 43, .14);
+        }
+
+        .quick-stat {
+            display: flex;
+            align-items: center;
+            gap: .9rem;
+            background: #f7fbfc;
+            border: 1px solid #e1edf2;
+            border-radius: 1rem;
+            padding: 1rem 1.05rem;
+            min-height: 100%;
+        }
+
+        .quick-stat .icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 999px;
+            flex: 0 0 3rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #dff4f7, #eff8fa);
+            color: #0f6d7a;
+            font-size: 1.05rem;
+        }
+
+        .quick-stat .label {
+            display: block;
+            font-size: .92rem;
+            color: #5d7581;
+            margin-bottom: .1rem;
+        }
+
+        .quick-stat .value {
+            display: block;
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #17313c;
+        }
+
+
+        @media (max-width: 991.98px) {
+            .hero-mba .hero-inner {
+                padding: 5rem 0 7rem;
+            }
+
+            .floating-card-wrap {
+                margin-top: -2rem;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .hero-mba .hero-actions a {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body class="header_sticky healthcare-mba-page">
+    <div class="wrapper">
+        <div id="page">
+            <header class="header downscrolled clearfix">
+                <div id="header">
+                    <div id="site-header">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="assets/image/logo-yotta.svg" alt="Yotta Medical School" width="140" />
+                            </a>
+                        </div>
+                        <div class="nav-wrap">
+                            <nav id="mainnav" class="mainnav">
+                                <ul class="menu">
+                                    <li class="active">
+                                        <a href="index.html" title="">الرئيسية</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="categories.html" title="">الأقسام</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="categories.html" title="">كل الأقسام</a></li>
+                                            <li><a href="about.html" title="">عن الأكاديمية</a></li>
+                                            <li><a href="contact.html" title="">تواصل معنا</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="diplomas.html" title="">الدبلومات</a>
+                                    </li>
+                                    <li>
+                                        <a href="courses.html" title="">الدورات</a>
+                                    </li>
+                                    <li>
+                                        <a href="pricing.html" title="">الباقات</a>
+                                    </li>
+                                    <li>
+                                        <a href="accreditation.html" title="">الاعتمادات</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="contact">
+                            <div class="top-bar-right">
+                                <div class="button-header">
+                                    <a href="login.html" class="bg-main-outline rounded-pill ml-2"><span>تسجيل
+                                            الدخول</span></a>
+                                    <a href="register.html" class="bg-main rounded-pill"><span>إنشاء حساب</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn-menu">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="hero-mba">
+                <div class="container hero-inner">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8 text-right">
+                            <div class="hero-badge wow fadeInDown">
+                                <i class="fas fa-heartbeat"></i>
+                                <span>برنامج مهني متكامل للأطباء وقادة الرعاية الصحية</span>
+                            </div>
+                            <h1 class="hero-title wow fadeInUp">الماجستير المهني في إدارة الرعاية الصحية </h1>
+                            <p class="hero-sub wow fadeInUp" data-wow-delay="50ms">
+                                (Healthcare
+                                MBA)
+                            </p>
+                            <p class="hero-lead wow fadeInUp" data-wow-delay="100ms">
+                                برنامج مهني متكامل بمعايير عالمية لإعداد قادة الرعاية الصحية ومديري المستشفيات.
+                            </p>
+                            <div class="hero-actions wow fadeInUp" data-wow-delay="150ms">
+                                <a href="register.html" class="btn btn-primary">احجز مقعدك الآن</a>
+                                <a href="contact.html" class="btn btn-outline-light">حمل الملف التعريفي</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="floating-card-wrap">
+                <div class="container">
+                    <div class="floating-card wow fadeInUp">
+                        <div class="row">
+                            <div class="col-12 mb-4">
+                                <div class="section-heading mb-0 text-right">
+                                    <div class="eyebrow"><i class="fas fa-chart-line"></i><span>لمحة سريعة عن
+                                            البرنامج</span></div>
+                                    <h2 class="mb-0">مزايا مختصرة تمنحك قرارًا أوضح</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-6 mb-3 mb-md-0">
+                                <div class="quick-stat">
+                                    <span class="icon"><i class="fas fa-star"></i></span>
+                                    <div>
+                                        <span class="label">التقييم</span>
+                                        <span class="value">5 نجوم</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-3 mb-md-0">
+                                <div class="quick-stat">
+                                    <span class="icon"><i class="fas fa-book-open"></i></span>
+                                    <div>
+                                        <span class="label">المواد</span>
+                                        <span class="value">16 مادة</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="quick-stat">
+                                    <span class="icon"><i class="fas fa-clock"></i></span>
+                                    <div>
+                                        <span class="label">الساعات</span>
+                                        <span class="value">350 ساعة</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="quick-stat">
+                                    <span class="icon"><i class="fas fa-calendar-alt"></i></span>
+                                    <div>
+                                        <span class="label">المدة</span>
+                                        <span class="value">24 شهرًا</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <footer id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="box-list-footer">
+                                <div class="box-list box-contact text-right">
+                                    <div class="title-footer text-color-white">تواصل معنا</div>
+                                    <ul class="one-half first">
+                                        <li>
+                                            <span><i class="fas fa-map-marker-alt flat-icon-footer"></i></span>
+                                            <span>12/13 A , Taksim Alasilki , Maadi Cairo</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="fa fa-phone-alt flat-icon-footer"></i></span>
+                                            <span><a href="tel:0123456789">+201 0166 8909</a></span>
+                                        </li>
+                                        <li>
+                                            <span><i class="fas fa-envelope flat-icon-footer"></i></span>
+                                            <span><a href="mailto:info@yotta.com">info@yotta.com</a></span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="box-list box-useful text-right">
+                                    <div class="title-footer text-color-white"><a>روابط سريعة</a></div>
+                                    <ul class="one-half first">
+                                        <li><a href="diplomas.html" title=""><span><i
+                                                        class="fa fa-square"></i></span>الدبلومات</a></li>
+                                        <li><a href="courses.html" title=""><span><i
+                                                        class="fa fa-square"></i></span>الدورات</a></li>
+                                        <li><a href="categories.html" title=""><span><i
+                                                        class="fa fa-square"></i></span>الأقسام</a></li>
+                                        <li><a href="pricing.html" title=""><span><i
+                                                        class="fa fa-square"></i></span>الباقات</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="box-list box-recent text-right">
+                                    <div class="title-footer text-color-white"><a>الشركة</a></div>
+                                    <ul class="one-half first">
+                                        <li><a href="index.html" title=""><span><i
+                                                        class="fa fa-square"></i></span>الرئيسية</a></li>
+                                        <li><a href="about.html" title=""><span><i class="fa fa-square"></i></span>عن
+                                                الأكاديمية</a></li>
+                                        <li><a href="contact.html" title=""><span><i
+                                                        class="fa fa-square"></i></span>تواصل معنا</a></li>
+                                        <li><a href="accreditation.html" title=""><span><i
+                                                        class="fa fa-square"></i></span>الاعتمادات</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="box-list box-services text-right">
+                                    <div class="title-footer text-color-white"><a>الدخول</a></div>
+                                    <ul class="one-half first">
+                                        <li><a href="login.html" title=""><span><i class="fa fa-square"></i></span>تسجيل
+                                                الدخول</a></li>
+                                        <li><a href="register.html" title=""><span><i
+                                                        class="fa fa-square"></i></span>إنشاء حساب</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="themesflat-spacer clearfix" data-desktop="95" data-mobile="50" data-smobile="40">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom py-lg-0 py-3">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="logo-bottom">
+                                <a href="index.html">
+                                    <img src="assets/image/logo-yotta.svg" alt="Yotta Medical School" width="130" />
+                                </a>
+                            </div>
+                            <h3 class="copyright">© Yotta Medical School 2026 | جميع الحقوق محفوظة</h3>
+                            <ul class="list-icon-bottom">
+                                <li class="bottom-icon-active">
+                                    <a href="https://www.facebook.com/YottaSchool/?modal=admin_todo_tour"
+                                        target="_blank" rel="noopener noreferrer" title="Facebook"
+                                        aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="bottom-icon-style">
+                                    <a href="https://twitter.com/YottaSchool" target="_blank" rel="noopener noreferrer"
+                                        title="Twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="bottom-icon-style">
+                                    <a href="https://www.instagram.com/yottaschool/" target="_blank"
+                                        rel="noopener noreferrer" title="Instagram" aria-label="Instagram"><i
+                                            class="fab fa-instagram"></i></a>
+                                </li>
+                                <li class="bottom-icon-style">
+                                    <a href="https://www.linkedin.com/company/yottamedicalschool/" target="_blank"
+                                        rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <div class="button-go-top">
+                <a href="#" title="العودة إلى أعلى الصفحة" aria-label="العودة إلى أعلى الصفحة" class="go-top">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.easing.js"></script>
+    <script src="assets/animation/wow.min.js"></script>
+    <script src="javascript/animation.js"></script>
+    <script type="text/javascript" src="javascript/main.js"></script>
+</body>
+
+</html>
