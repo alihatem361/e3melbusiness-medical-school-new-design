@@ -210,6 +210,288 @@
             color: #17313c;
         }
 
+        .video-frame {
+            position: relative;
+            overflow: hidden;
+            border-radius: 1.5rem;
+            box-shadow: 0 18px 40px rgba(12, 32, 43, .12);
+            border: 1px solid #e5eff3;
+            background: #fff;
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .video-frame:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 24px 48px rgba(12, 32, 43, .16);
+        }
+
+        .video-frame img {
+            width: 100%;
+            display: block;
+        }
+
+        .video-play {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, rgba(7, 24, 34, .08), rgba(7, 24, 34, .2));
+        }
+
+        .video-play .play-btn {
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            color: #0f6d7a;
+            font-size: 1.45rem;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, .2);
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .video-play .play-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 16px 34px rgba(0, 0, 0, .24);
+        }
+
+        .feature-card {
+            background: #fff;
+            border: 1px solid #e3edf1;
+            border-radius: 1.35rem;
+            padding: 2.1rem 1.45rem;
+            box-shadow: 0 12px 26px rgba(15, 36, 46, .05);
+            transition: transform .25s ease, box-shadow .25s ease;
+            height: 100%;
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 22px 45px rgba(15, 36, 46, .1);
+        }
+
+        .feature-card .icon {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 1.2rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.25rem;
+            background: linear-gradient(135deg, #e8f6f7, #f3fafb);
+            color: #0f6d7a;
+            font-size: 1.9rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            font-weight: 800;
+            margin-bottom: .85rem;
+            color: #17313c;
+        }
+
+        .feature-card p {
+            color: #5a707a;
+            line-height: 1.95;
+            margin-bottom: 0;
+        }
+
+        .accreditation-logo-card {
+            background: #fff;
+            border: 1px solid #e4edf2;
+            border-radius: 1.1rem;
+            padding: 1.5rem 1.2rem;
+            text-align: center;
+            height: 100%;
+            box-shadow: 0 10px 22px rgba(14, 32, 43, .05);
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .accreditation-logo-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 18px 34px rgba(14, 32, 43, .1);
+        }
+
+        .accreditation-logo-card img {
+            max-height: 72px;
+            width: auto;
+            object-fit: contain;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .accreditation-logo-card .caption {
+            margin-top: 1rem;
+            font-weight: 700;
+            color: #536974;
+            font-size: .96rem;
+        }
+
+        .curriculum-tabs .nav-tabs {
+            border: 0;
+            gap: .75rem;
+            justify-content: center;
+            margin-bottom: 1.75rem;
+        }
+
+        .curriculum-tabs .nav-tabs .nav-link {
+            border: 1px solid #dce9ee;
+            border-radius: 999px;
+            background: #fff;
+            color: #2d4a55;
+            padding: .95rem 1.35rem;
+            font-weight: 800;
+            box-shadow: 0 8px 20px rgba(11, 31, 41, .04);
+            transition: background .25s ease, color .25s ease, transform .25s ease;
+        }
+
+        .curriculum-tabs .nav-tabs .nav-link:hover {
+            transform: translateY(-2px);
+        }
+
+        .curriculum-tabs .nav-tabs .nav-link.active {
+            color: #fff;
+            background: linear-gradient(135deg, #23a0b8, #0e5d71);
+            border-color: transparent;
+        }
+
+        .course-card .box-item {
+            background: #fff;
+            border: 1px solid #e6eef2;
+            border-radius: 1.25rem;
+            overflow: hidden;
+            box-shadow: 0 12px 28px rgba(11, 31, 41, .07);
+            height: 100%;
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .course-card .box-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 22px 40px rgba(11, 31, 41, .12);
+        }
+
+        .course-card .img img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .course-card .box-wrap {
+            padding: 1.35rem;
+        }
+
+        .course-card .meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .course-card .title a {
+            color: #17313c;
+        }
+
+        .stats-card {
+            background: #fff;
+            border-radius: 1.25rem;
+            border: 1px solid #e2edf1;
+            padding: 1.5rem 1.25rem;
+            text-align: center;
+            box-shadow: 0 12px 26px rgba(11, 31, 41, .05);
+            height: 100%;
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .stats-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 18px 34px rgba(11, 31, 41, .09);
+        }
+
+        .stats-card .icon {
+            width: 3.4rem;
+            height: 3.4rem;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #e8f6f7, #f3fafb);
+            color: #0f6d7a;
+            font-size: 1.15rem;
+        }
+
+        .stats-card .number {
+            font-size: clamp(2rem, 4vw, 3.35rem);
+            line-height: 1;
+            font-weight: 900;
+            margin-bottom: .55rem;
+            color: #0f6d7a;
+        }
+
+        .stats-card .label {
+            color: #58707b;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+
+        .faq-modern .card {
+            border: 0;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 10px 24px rgba(11, 31, 41, .05);
+            margin-bottom: 1rem;
+        }
+
+        .faq-modern .card-header {
+            border: 0;
+            background: #fff;
+            padding: 0;
+        }
+
+        .faq-modern .btn-link {
+            width: 100%;
+            text-align: right;
+            padding: 1.1rem 1.25rem;
+            color: #17313c;
+            font-weight: 800;
+            text-decoration: none;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .faq-modern .btn-link:hover,
+        .faq-modern .btn-link:focus {
+            text-decoration: none;
+        }
+
+        .faq-modern .faq-toggle-icon {
+            color: #0f6d7a;
+            font-size: 1.25rem;
+            transition: transform .25s ease;
+        }
+
+        .faq-modern .btn-link[aria-expanded="true"] .faq-toggle-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-modern .card-body {
+            background: #f8fcfd;
+            color: #54707b;
+            line-height: 1.95;
+            padding: 1.2rem 1.25rem 1.35rem;
+        }
+
+        .bg-soft-mba {
+            background: #f2f8fb;
+        }
 
         @media (max-width: 991.98px) {
             .hero-mba .hero-inner {
@@ -294,11 +576,8 @@
                                 <i class="fas fa-heartbeat"></i>
                                 <span>برنامج مهني متكامل للأطباء وقادة الرعاية الصحية</span>
                             </div>
-                            <h1 class="hero-title wow fadeInUp">الماجستير المهني في إدارة الرعاية الصحية </h1>
-                            <p class="hero-sub wow fadeInUp" data-wow-delay="50ms">
-                                (Healthcare
-                                MBA)
-                            </p>
+                            <h1 class="hero-title wow fadeInUp">الماجستير المهني في إدارة الرعاية الصحية (Healthcare
+                                MBA)</h1>
                             <p class="hero-lead wow fadeInUp" data-wow-delay="100ms">
                                 برنامج مهني متكامل بمعايير عالمية لإعداد قادة الرعاية الصحية ومديري المستشفيات.
                             </p>
@@ -365,110 +644,187 @@
                 </div>
             </section>
 
+            <main id="main-content" class="site-main clearfix">
+                <div id="content-wrap">
+                    <div id="site-content" class="site-content clearfix">
+                        <div id="inner-content" class="inner-content-wrap">
+                            <div class="page-content">
+                                <section class="page-section bg-white">
+                                    <div class="container">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-6 order-lg-1 text-right mb-4 mb-lg-0">
+                                                <div class="section-heading">
+                                                    <div class="eyebrow"><i class="fas fa-info-circle"></i><span>عن
+                                                            البرنامج</span></div>
+                                                    <h2>برنامج يرفع كفاءة الطبيب إلى مستوى الإدارة الاحترافية</h2>
+                                                    <p>
+                                                        صمم هذا الماجستير المهني ليمنحك أدوات عملية في القيادة وإدارة
+                                                        المنشآت الصحية، مع تركيز واضح على
+                                                        الجودة وسلامة المرضى والحوكمة والاعتماد. المحتوى مناسب للأطباء
+                                                        ومديري المستشفيات والكوادر
+                                                        الصحية الطامحة إلى أدوار قيادية أكثر تأثيرًا.
+                                                    </p>
+                                                </div>
+                                                <div class="row mt-4">
+                                                    <div class="col-sm-6 mb-3">
+                                                        <div class="quick-stat">
+                                                            <span class="icon"><i
+                                                                    class="fas fa-check-circle"></i></span>
+                                                            <div>
+                                                                <span class="value">تعلم تطبيقي</span>
+                                                                <span class="label">أدوات قابلة للتنفيذ في العمل
+                                                                    اليومي</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 mb-3">
+                                                        <div class="quick-stat">
+                                                            <span class="icon"><i class="fas fa-user-md"></i></span>
+                                                            <div>
+                                                                <span class="value">مناسب للأطباء</span>
+                                                                <span class="label">مرونة في الحضور والالتزام</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- i fram video youtube -->
+                                            <div class="col-lg-6 order-lg-0">
+                                                <div class="video-frame wow fadeInUp">
+                                                    <iframe width="100%" height="315"
+                                                        src="https://www.youtube.com/embed/lYs7UOXoXjY?si=IZsXty4rHjvVD9hB"
+                                                        title="YouTube video player" frameborder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowfullscreen></iframe>
+                                                    <div class="video-play" aria-label="تشغيل الفيديو" role="button"
+                                                        tabindex="0" onclick="playVideo(this)"
+                                                        onkeypress="if(event.key === 'Enter') playVideo(this)">
+                                                        <span class="play-btn" aria-hidden="true"><i
+                                                                class="fas fa-play"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
 
+                                <section class="page-section section-alt">
+                                    <div class="container">
+                                        <div class="section-heading text-right">
+                                            <div class="eyebrow"><i class="fas fa-bullseye"></i><span>لماذا ماجستير
+                                                    إدارة الرعاية الصحية؟</span></div>
+                                            <h2>ثلاث مزايا تجعل البرنامج مناسبًا للأطباء والقيادات الصحية</h2>
+                                            <p>
+                                                بناء معرفي يوازن بين الجانب الطبي والجانب الإداري، مع محتوى حديث وتجربة
+                                                تعليمية مرنة تساعدك على
+                                                التطور المهني دون تعطيل التزاماتك العملية.
+                                            </p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 mb-4 mb-md-0">
+                                                <div class="feature-card wow fadeInUp">
+                                                    <div class="icon"><i class="fas fa-certificate"></i></div>
+                                                    <h3>شهادات طبية وإدارية معتمدة</h3>
+                                                    <p>
+                                                        مخرجات تعليمية تمنحك ثقة مهنية أعلى وتدعم مسارك بين الممارسة
+                                                        الطبية والإدارة المتقدمة داخل
+                                                        المنشآت الصحية.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-4 mb-md-0">
+                                                <div class="feature-card wow fadeInUp" data-wow-delay="100ms">
+                                                    <div class="icon"><i class="fas fa-user-clock"></i></div>
+                                                    <h3>نظام دراسي مرن يناسب الأطباء</h3>
+                                                    <p>
+                                                        تصميم تعليمي مرن يراعي جداول العمل والعيادات والمناوبات، مع
+                                                        تجربة مريحة تتيح الاستفادة من
+                                                        المحتوى بأفضل صورة.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="feature-card wow fadeInUp" data-wow-delay="200ms">
+                                                    <div class="icon"><i class="fas fa-procedures"></i></div>
+                                                    <h3>مادة علمية محدثة لإدارة المستشفيات</h3>
+                                                    <p>
+                                                        محتوى معاصر يركز على التشغيل والجودة والاعتماد والقيادة
+                                                        الاستراتيجية واتخاذ القرار داخل بيئة
+                                                        الرعاية الصحية.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
 
-            <footer id="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="box-list-footer">
-                                <div class="box-list box-contact text-right">
-                                    <div class="title-footer text-color-white">تواصل معنا</div>
-                                    <ul class="one-half first">
-                                        <li>
-                                            <span><i class="fas fa-map-marker-alt flat-icon-footer"></i></span>
-                                            <span>12/13 A , Taksim Alasilki , Maadi Cairo</span>
-                                        </li>
-                                        <li>
-                                            <span><i class="fa fa-phone-alt flat-icon-footer"></i></span>
-                                            <span><a href="tel:0123456789">+201 0166 8909</a></span>
-                                        </li>
-                                        <li>
-                                            <span><i class="fas fa-envelope flat-icon-footer"></i></span>
-                                            <span><a href="mailto:info@yotta.com">info@yotta.com</a></span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="box-list box-useful text-right">
-                                    <div class="title-footer text-color-white"><a>روابط سريعة</a></div>
-                                    <ul class="one-half first">
-                                        <li><a href="diplomas.html" title=""><span><i
-                                                        class="fa fa-square"></i></span>الدبلومات</a></li>
-                                        <li><a href="courses.html" title=""><span><i
-                                                        class="fa fa-square"></i></span>الدورات</a></li>
-                                        <li><a href="categories.html" title=""><span><i
-                                                        class="fa fa-square"></i></span>الأقسام</a></li>
-                                        <li><a href="pricing.html" title=""><span><i
-                                                        class="fa fa-square"></i></span>الباقات</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="box-list box-recent text-right">
-                                    <div class="title-footer text-color-white"><a>الشركة</a></div>
-                                    <ul class="one-half first">
-                                        <li><a href="index.html" title=""><span><i
-                                                        class="fa fa-square"></i></span>الرئيسية</a></li>
-                                        <li><a href="about.html" title=""><span><i class="fa fa-square"></i></span>عن
-                                                الأكاديمية</a></li>
-                                        <li><a href="contact.html" title=""><span><i
-                                                        class="fa fa-square"></i></span>تواصل معنا</a></li>
-                                        <li><a href="accreditation.html" title=""><span><i
-                                                        class="fa fa-square"></i></span>الاعتمادات</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="box-list box-services text-right">
-                                    <div class="title-footer text-color-white"><a>الدخول</a></div>
-                                    <ul class="one-half first">
-                                        <li><a href="login.html" title=""><span><i class="fa fa-square"></i></span>تسجيل
-                                                الدخول</a></li>
-                                        <li><a href="register.html" title=""><span><i
-                                                        class="fa fa-square"></i></span>إنشاء حساب</a></li>
-                                    </ul>
-                                </div>
+                                <section class="page-section bg-white">
+                                    <div class="container">
+                                        <div class="section-heading text-right">
+                                            <div class="eyebrow"><i class="fas fa-award"></i><span>الاعتمادات
+                                                    والتوثيقات</span></div>
+                                            <h2>شراكات تعزز القيمة الأكاديمية والمهنية للبرنامج</h2>
+                                            <p>
+                                                تعتمد تجربة البرنامج على شبكة من الاعتمادات والشهادات والجهات الداعمة
+                                                التي تضيف ثقة أكبر لمسارك
+                                                المهني داخل قطاع الرعاية الصحية.
+                                            </p>
+                                        </div>
+                                        <div class="row align-items-stretch">
+                                            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                                                <div class="accreditation-logo-card wow fadeInUp">
+                                                    <img src="assets/image/accreditations/Ajman.png"
+                                                        alt="Ajman University Continuing Education Center" />
+                                                    <div class="caption">اعتماد أكاديمي</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                                                <div class="accreditation-logo-card wow fadeInUp"
+                                                    data-wow-delay="100ms">
+                                                    <img src="assets/image/accreditations/20360(1).png"
+                                                        alt="EBU University" />
+                                                    <div class="caption">شراكة دولية</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                                                <div class="accreditation-logo-card wow fadeInUp"
+                                                    data-wow-delay="200ms">
+                                                    <img src="assets/image/accreditations/IFTDO.png" alt="IFTDO" />
+                                                    <div class="caption">عضوية مهنية</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                                                <div class="accreditation-logo-card wow fadeInUp"
+                                                    data-wow-delay="300ms">
+                                                    <img src="assets/image/accreditations/Mara.png"
+                                                        alt="Universiti Teknologi MARA" />
+                                                    <div class="caption">اعتماد برامج</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                                                <div class="accreditation-logo-card wow fadeInUp"
+                                                    data-wow-delay="400ms">
+                                                    <img src="assets/image/accreditations/ISO-210012018.png"
+                                                        alt="ISO" />
+                                                    <div class="caption">توثيق جودة</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                                                <div class="accreditation-logo-card wow fadeInUp"
+                                                    data-wow-delay="500ms">
+                                                    <img src="assets/image/accreditations/CPD.png" alt="CPD" />
+                                                    <div class="caption">تطوير مهني</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="themesflat-spacer clearfix" data-desktop="95" data-mobile="50" data-smobile="40">
-                        </div>
-                    </div>
                 </div>
-                <div class="footer-bottom py-lg-0 py-3">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="logo-bottom">
-                                <a href="index.html">
-                                    <img src="assets/image/logo-yotta.svg" alt="Yotta Medical School" width="130" />
-                                </a>
-                            </div>
-                            <h3 class="copyright">© Yotta Medical School 2026 | جميع الحقوق محفوظة</h3>
-                            <ul class="list-icon-bottom">
-                                <li class="bottom-icon-active">
-                                    <a href="https://www.facebook.com/YottaSchool/?modal=admin_todo_tour"
-                                        target="_blank" rel="noopener noreferrer" title="Facebook"
-                                        aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li class="bottom-icon-style">
-                                    <a href="https://twitter.com/YottaSchool" target="_blank" rel="noopener noreferrer"
-                                        title="Twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li class="bottom-icon-style">
-                                    <a href="https://www.instagram.com/yottaschool/" target="_blank"
-                                        rel="noopener noreferrer" title="Instagram" aria-label="Instagram"><i
-                                            class="fab fa-instagram"></i></a>
-                                </li>
-                                <li class="bottom-icon-style">
-                                    <a href="https://www.linkedin.com/company/yottamedicalschool/" target="_blank"
-                                        rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            </main>
+
 
             <div class="button-go-top">
                 <a href="#" title="العودة إلى أعلى الصفحة" aria-label="العودة إلى أعلى الصفحة" class="go-top">
@@ -477,7 +833,13 @@
             </div>
         </div>
     </div>
-
+    <script>
+        function playVideo(el) {
+            const iframe = el.parentElement.querySelector("iframe")
+            iframe.src = iframe.src + "&autoplay=1"
+            el.style.display = "none"
+        }
+    </script>
     <script type="text/javascript" src="javascript/jquery.min.js"></script>
     <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
     <script type="text/javascript" src="javascript/jquery.easing.js"></script>
